@@ -1,0 +1,833 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #74610d;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.contenedorPadre {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.7fr 1.7fr 1.7fr;
+    gap: 5px 5px;
+    grid-template-areas:
+        "menu menu menu menu"
+        "video video video video"
+        "fraseVertical perpetua clasica turnos"
+        "fraseVertical perpetua2 clasica2 turnos2";
+    width: 90% auto;
+    height: 80vh auto;
+    margin: 20px auto
+}
+
+/*Comienzo Menu*/
+nav {
+    padding: 0.7rem;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.menu ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0.2rem;
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-area: menu;
+}
+
+.menu ul li {
+    text-align: center;
+    margin: 0.7rem;
+    background-color: beige;
+    padding: 0.7rem;
+    position: relative;
+    float: left;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+.menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 170px;
+}
+
+.menu ul ul li {
+    float: none;
+}
+
+.menu ul ul a {
+    line-height: 120%;
+}
+
+.menu ul li:hover>ul {
+    display: block;
+    background-color: beige;
+}
+
+.menu li:hover {
+    border: 1px #74610d solid;
+    border-radius: 2px;
+    opacity: 77%;
+}
+
+/*Fin Menu*/
+
+.video {
+    margin: 0.2rem;
+    grid-area: video;
+
+}
+
+.video video {
+    width: 100vw;
+}
+
+.fraseVertical {
+    grid-area: fraseVertical;
+    margin: 4rem;
+    align-self: center;
+}
+
+.fraseVertical img {
+    height: 60rem;
+}
+
+/*presentacion de productos index*/
+
+.diseños {
+    border: #74610d 3px solid;
+    border-style: double;
+}
+
+.perpetua {
+    width: 250px;
+    grid-area: perpetua;
+    justify-self: center;
+}
+
+.perpetua img {
+    width: 16rem;
+    margin: 1rem;
+}
+
+.perpetua2 {
+    grid-area: perpetua2;
+    width: 250px;
+    justify-self: center;
+}
+
+.perpetua2 img {
+    width: 16rem;
+    margin: 1rem;
+}
+
+.clasica {
+    grid-area: clasica;
+    width: 250px;
+    justify-self: center;
+}
+
+.clasica img {
+    width: 16rem;
+    margin: 1rem;
+}
+
+.clasica2 {
+    grid-area: clasica2;
+    width: 250px;
+    justify-self: center;
+}
+
+.clasica2 img {
+    width: 16rem;
+    margin: 1rem;
+}
+
+.turnos {
+    grid-area: turnos;
+    width: 250px;
+    justify-self: center;
+}
+
+.turnos img {
+    width: 16rem;
+    margin: 1rem;
+}
+
+.turnos2 {
+    grid-area: turnos2;
+    width: 250px;
+    justify-self: center;
+}
+
+.turnos2 img {
+    width: 16rem;
+    margin: 1rem;
+}
+
+.iconos {
+    display: flex;
+    width: 12rem;
+}
+
+.iconos img {
+    width: 3.5rem;
+}
+
+/* Fin presentacion de productos index*/
+
+/*footer*/
+footer {
+    background-color: beige;
+    height: auto;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.footerContenedor {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr 1fr;
+    grid-template-rows: 1.4fr 0.6fr;
+    gap: 5px 5px;
+    grid-template-areas:
+        "mediosDePago . newslater"
+        "mediosDePago . redes";
+    width: 100vh auto;
+    height: 20vh auto;
+    margin: auto;
+}
+
+
+.mediosDePago {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    grid-area: mediosDePago;
+}
+
+.mediosDePago h1 {
+    font-size: smaller;
+}
+
+.mediosDePago ul li {
+    line-height: 3rem;
+    list-style: none;
+    font-size: small;
+}
+
+.mediosDePago img {
+    width: 1rem;
+}
+
+.newslater {
+    font-size: smaller;
+    margin-top: 2rem;
+    grid-area: newslater;
+    background-color: beige;
+    justify-items: left;
+}
+
+.newslater form {
+    width: 100% auto;
+    padding: 1rem;
+}
+
+.newslater form fieldset {
+    height: 10rem;
+    width: 100%;
+    padding: 1rem;
+    color: #74610d;
+    border-radius: 0.2rem;
+}
+
+.inputNewslater {
+    display: flex;
+    background-color: #ffffff;
+    width: 100%;
+    height: 1.2rem;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #74610d;
+}
+
+.enviarBottom {
+    background-color: #ffffff;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #74610d;
+    margin-top: 3px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+.redes {
+    grid-area: redes;
+    margin-right: 6rem;
+}
+
+.redes ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes h1 {
+    font-size: small;
+}
+
+.redes li {
+    list-style-type: none;
+    text-align: center;
+    margin: 0.7rem;
+    background-color: beige;
+    padding: 0.7rem;
+    margin-top: 0px;
+
+}
+
+.redes li a {
+    text-decoration: none;
+    font-size: small;
+}
+
+.redes img {
+    width: 1.6rem;
+    vertical-align: middle;
+    padding: 2px;
+}
+
+
+/*BOTON FLOTANTE*/
+.whatsAppFlotante h6 {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    font-size: 15px;
+    z-index: 999;
+}
+
+.whatsAppFlotante img {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    margin-right: 0.7rem;
+}
+
+@media screen and (max-width:768px) {
+    .fraseVertical {
+        display: none;
+    }
+
+    .contenedorPadre {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8 auto);
+        grid-template-areas:
+            "menu"
+            "video"
+            "perpetua"
+            "perpetua2"
+            "clasica"
+            "clasica2"
+            "turnos"
+            "turnos2";
+    }
+
+    .footerContenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3 auto);
+        grid-template-areas:
+            "mediosDePago"
+            "newslater"
+            "redes";
+    }
+
+    .redes {
+        margin: 0px auto;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .redes h1 {
+        text-align: center;
+    }
+
+    .redes ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mediosDePago {
+        margin: 0px auto;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .newslater {
+        margin-top: 0.5rem;
+    }
+}
+
+/*Nosotros*/
+.contenedorNosotros {
+    display: grid;
+    grid-template-columns: 1.6fr repeat(4, 1fr);
+    grid-template-rows: 0.4fr 2fr 0.5fr;
+    gap: 5px 5px;
+    grid-template-areas:
+        "menu menu menu menu menu"
+        "fotoNosotros textoNosotros textoNosotros textoNosotros textoNosotros"
+        "fotoNosotros proceso1 proceso2 proceso3 proceso4";
+    width: 80% auto;
+    height: 50vh auto;
+    margin: 4rem auto;
+}
+
+.fotoNosotros {
+    grid-area: fotoNosotros;
+    justify-items: center;
+    text-align: center;
+}
+
+.fotoNosotros img {
+    height: 50rem;
+    margin-left: 1rem;
+}
+
+.textoNosotros {
+    grid-area: textoNosotros;
+}
+
+.textoNosotros p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: justify;
+    line-height: 270%;
+}
+
+.proceso1 {
+    grid-area: proceso1;
+}
+
+.proceso2 {
+    grid-area: proceso2;
+}
+
+.proceso3 {
+    grid-area: proceso3;
+}
+
+.proceso4 {
+    grid-area: proceso4;
+}
+
+.pimg {
+    width: 10rem;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    margin-top: 1.65rem;
+    border-radius: 0.2rem;
+}
+
+@media screen and (max-width:768px) {
+    .contenedorNosotros {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        gap: 0px 0px;
+        grid-template-areas:
+            "menu menu"
+            "fotoNosotros fotoNosotros"
+            "textoNosotros textoNosotros"
+            "proceso1 proceso2"
+            "proceso3 proceso4";
+    }
+
+    .fotoNosotros img {
+        height: 90vh;
+    }
+}
+
+/*Fin Nosotros*/
+
+/*Productos*/
+
+.contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.4fr repeat(5, 1fr);
+    gap: 5px 5px;
+    grid-template-areas:
+        "menu menu menu"
+        "producto1 producto1 producto1"
+        "producto2 producto2 producto2"
+        "producto3 producto3 producto3"
+        "producto4 producto4 producto4"
+        "producto5 producto5 producto5";
+    width: 80% auto;
+    height: 50vh auto;
+    margin: 10px auto;
+}
+
+.contInfo {
+    display: flex;
+    justify-content: left;
+}
+
+.fotoProducto img {
+    height: 25rem;
+    margin: 2rem;
+    border-radius: 2px;
+}
+
+.textoProducto h1 {
+    font-size: 16px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.textoProducto ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.textoProducto ul li {
+    width: 20rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: justify;
+    line-height: 220%;
+    font-size: 0.75rem;
+}
+
+.irATienda {
+    margin-top: auto;
+    margin-left: auto;
+    padding: 1rem;
+}
+
+.producto1 {
+    grid-area: producto1;
+    width: 95%;
+    margin: 2rem;
+}
+
+.producto2 {
+    grid-area: producto2;
+    width: 95%;
+    margin: 2rem;
+}
+
+.producto3 {
+    grid-area: producto3;
+    width: 95%;
+    margin: 2rem;
+}
+
+.producto4 {
+    grid-area: producto4;
+    width: 95%;
+    margin: 2rem;
+}
+
+.producto5 {
+    grid-area: producto5;
+    width: 95%;
+    margin: 2rem;
+}
+
+.conocemas {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #74610d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px auto;
+    padding: 3%
+}
+
+.conocemas a {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+    .contenedorProductos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        gap: 3px 3px;
+        grid-template-areas:
+            "menu"
+            "producto1"
+            "producto2"
+            "producto3"
+            "producto4"
+            "producto5";
+    }
+
+    .contInfo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+/*Fin Productos*/
+
+/*FAQ*/
+.dudas {
+    margin-bottom: 2rem;
+    display: block;
+    line-height: 220%;
+    margin-left: 2rem;
+}
+
+.dudas h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1.7rem;
+    text-align: right;
+    margin-right: 2rem;
+}
+
+.preguntas {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+.respuesta {
+    text-align: left;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 3rem;
+}
+
+/*FIN FAQ*/
+
+/*Contacto Formulario*/
+.formulario {
+    width: 460px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background: #f4f4ed;
+    background: -moz-linear-gradient(top, #f4f4ed 0%, #f5f5dc 100%);
+    background: -webkit-linear-gradient(top, #f4f4ed 0%, #f5f5dc 100%);
+    background: linear-gradient(to bottom, #f4f4ed 0%, #f5f5dc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4ed', endColorstr='#f5f5dc', GradientType=0);
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.formulario h3 {
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+}
+
+.formulario input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #74610d;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.textarea {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #74610d;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+.botonenviar {
+    font-style: oblique;
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: beige;
+    border-color: #74610d;
+    border-style: solid;
+    border-radius: 10px;
+    width: 408px;
+    cursor: pointer;
+}
+
+.aviso {
+    font-size: 13px;
+}
+
+/*FIN CONTACTO*/
+
+/*MAYORISTAS*/
+.contenedorMayoristas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.2fr 1.8fr;
+    gap: 6px 6px;
+    grid-template-areas:
+        "menu menu"
+        "mayoristas condicionesDeVenta";
+    width: 90% auto;
+    height: 50vh auto;
+    margin: 20px auto;
+}
+
+.mayoristas {
+    grid-area: mayoristas;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+}
+
+
+
+
+.mayoristas form h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.mayoristas label {
+    margin-bottom: 1rem;
+}
+
+.inputMayorista {
+    background-color: #fbfbfb;
+    width: 100%;
+    height: 1.2rem;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #74610d;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.botonEnviarMay {
+    background-color: #ffffff;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 3px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+.botonEnviarMay:hover {
+    background-color: beige;
+}
+
+.condicionesDeVenta {
+    width: 90%;
+    grid-area: condicionesDeVenta;
+    align-self: center;
+    justify-self: start;
+    margin: 0px auto;
+}
+
+.condicionesDeVenta legend {
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.condicionesDeVenta form {
+    width: 100% auto;
+    padding: 1rem;
+}
+
+.condicionesDeVenta form fieldset {
+    height: 10rem;
+    width: 100%;
+    padding: 1rem;
+    color: #74610d;
+    border-radius: 0.2rem;
+}
+
+.condicionesDeVenta h1 {
+    width: 100%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    text-align: justify;
+}
+
+.condicionesDeVenta ul {
+    line-height: 2rem;
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width:768px) {
+    .contenedorMayoristas {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 3px 3px;
+        grid-template-areas:
+            "menu"
+            "mayoristas"
+            "condicionesDeVenta";
+    }
+}
