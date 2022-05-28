@@ -5,6 +5,28 @@
     color: #74610d;
     font-family: 'Libre Baskerville', serif;
 }
+/*Banner header*/
+header{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.headerTexto{
+    position: absolute;
+    bottom: 3.5rem;
+    right: 15rem;
+    color: white;
+    font-weight: lighter;
+    font-size: 120%;
+}
+
+.headerLogo{
+    position: absolute;
+    top: 4rem;
+    left: 9.6rem;
+    width: 6rem;
+}
 
 .contenedorPadre {
     display: grid;
