@@ -4,7 +4,9 @@
     box-sizing: border-box;
     color: #74610d;
     font-family: 'Libre Baskerville', serif;
+    text-decoration: none;
 }
+
 /*Banner header*/
 header{
     position: relative;
@@ -314,6 +316,7 @@ footer {
 
 .redes h1 {
     font-size: small;
+    
 }
 
 .redes li {
@@ -329,6 +332,7 @@ footer {
 .redes li a {
     text-decoration: none;
     font-size: small;
+    color: #74610d;
 }
 
 .redes img {
@@ -646,21 +650,16 @@ footer {
     text-align: right;
     margin-right: 2rem;
 }
-
-.preguntas {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: left;
-
+.accordion-button:not(.collapsed) {
+    color:#74610d;
+    background-color: beige;
 }
-
-.respuesta {
-    text-align: left;
-    font-weight: lighter;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 3rem;
+.accordion-button:not(.collapsed)::after {
+color: black;
 }
-
+.accordion-button:focus {
+box-shadow: none;
+}
 /*FIN FAQ*/
 
 /*Contacto Formulario*/
