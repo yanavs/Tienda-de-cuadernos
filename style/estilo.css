@@ -8,13 +8,13 @@
 }
 
 /*Banner header*/
-header{
+header {
     position: relative;
     display: inline-block;
     text-align: center;
 }
 
-.headerTexto{
+.headerTexto {
     position: absolute;
     bottom: 3.5rem;
     right: 15rem;
@@ -23,7 +23,7 @@ header{
     font-size: 120%;
 }
 
-.headerLogo{
+.headerLogo {
     position: absolute;
     top: 4rem;
     left: 9.6rem;
@@ -46,65 +46,24 @@ header{
 }
 
 /*Comienzo Menu*/
-nav {
-    padding: 0.7rem;
+.navbar {
+    background: beige;
+    margin: 1rem;
 }
 
-.menu {
-    grid-area: menu;
+.nav-link {
+    color: #74610d;
 }
 
-.menu ul {
-    list-style-type: none;
-    width: 100%;
-    margin: 0.2rem;
-    background-color: beige;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    grid-area: menu;
-}
-
-.menu ul li {
-    text-align: center;
-    margin: 0.7rem;
-    background-color: beige;
-    padding: 0.7rem;
-    position: relative;
-    float: left;
-}
-
-.menu li a {
-    text-decoration: none;
-}
-
-.menu ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 170px;
-}
-
-.menu ul ul li {
-    float: none;
-}
-
-.menu ul ul a {
-    line-height: 120%;
-}
-
-.menu ul li:hover>ul {
-    display: block;
+.dropdown-menu {
     background-color: beige;
 }
 
-.menu li:hover {
-    border: 1px #74610d solid;
-    border-radius: 2px;
-    opacity: 77%;
-}
+.navbar-nav li a:hover {
+        border: 1px #74610d solid;
+        border-radius: 2px;
+        opacity: 77%;
+    }
 
 /*Fin Menu*/
 
@@ -316,7 +275,7 @@ footer {
 
 .redes h1 {
     font-size: small;
-    
+
 }
 
 .redes li {
@@ -650,16 +609,20 @@ footer {
     text-align: right;
     margin-right: 2rem;
 }
+
 .accordion-button:not(.collapsed) {
-    color:#74610d;
+    color: #74610d;
     background-color: beige;
 }
+
 .accordion-button:not(.collapsed)::after {
-color: black;
+    color: black;
 }
+
 .accordion-button:focus {
-box-shadow: none;
+    box-shadow: none;
 }
+
 /*FIN FAQ*/
 
 /*Contacto Formulario*/
@@ -861,4 +824,68 @@ box-shadow: none;
             "mayoristas"
             "condicionesDeVenta";
     }
+}
+
+
+
+
+/*
+nav {
+    padding: 0.7rem;
+}
+
+.dropdown-menu {
+    grid-area: menu;
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0.2rem;
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-area: menu;
+}
+
+.dropdown-menu ul li {
+    text-align: center;
+    margin: 0.7rem;
+    background-color: beige;
+    padding: 0.7rem;
+    position: relative;
+    float: left;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+}
+
+.dropdown-menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 170px;
+}
+
+.dropdown-menu ul ul li {
+    float: none;
+}
+
+.dropdown-menu ul ul a {
+    line-height: 120%;
+}
+
+.dropdown-menu ul li:hover>ul {
+    display: block;
+    background-color: beige;
+}
+
+.dropdown-menu li:hover {
+    border: 1px #74610d solid;
+    border-radius: 2px;
+    opacity: 77%;
 }
