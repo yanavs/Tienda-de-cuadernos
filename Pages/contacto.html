@@ -6,70 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Img/icono.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel=" stylesheet" type="text/css" href="../style/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Roboto&display=swap"
         rel="stylesheet">
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>    
-    
-        <title>UpaLalá - Tienda de cuadernos 📚-</title>
-    </head>
-    
-    <body>
-        <header>
-            <img src="../Img/Banner.jpg" alt="Banner de presentacion" width="100%">
-            <h1 class="headerTexto animate__animated animate__backInLeft">...mejor anotar!</h1>
-            <img src="../Img/logo.svg" alt="Logo" class="headerLogo animate__animated animate__pulse animate__infinite">
-        </header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>UpaLalá - Tienda de cuadernos 📚-</title>
+</head>
+
+<body>
+    <header>
+        <img src="../Img/Banner.jpg" alt="Banner de presentacion" width="100%">
+        <h1 class="headerTexto animate__animated animate__backInLeft">...mejor anotar!</h1>
+        <img src="../Img/logo.svg" alt="Logo" class="headerLogo animate__animated animate__pulse animate__infinite">
+    </header>
+
     <main>
-        <div class="menu">
-            <nav>
-                <ul>
-                    <li>
-                        <a title="Inicio" href="../index.html">INICIO</a>
-                    </li>
-                    <li>
-                        <a title="Nosotros" href="./nosotros.html">NOSOTROS</a>
-                    </li>
-                    <li>
-                        <a title="Productos" href="./productos.html">PRODUCTOS</a>
-                        <ul>
-                            <li>
-                                <a href="#" class="agendas">Agendas</a>
-                            </li>
-                            <li>
-                                <a href="#">Planner Docente</a>
-                            </li>
-                            <li>
-                                <a href="#">Organizadores</a>
-                            </li>
-                            <li>
-                                <a href="#">Cuaderno Pediátrico</a>
-                            </li>
-                            <li>
-                                <a href="#">Cuaderno Prenatal</a>
-                            </li>
-                            <li>
-                                <a href="#">Diario de la Infancia</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a title="FAQ" href="./FAQ.html">FAQ</a>
-                    </li>
-                    <li>
-                        <a title="Mayoristas" href="./mayoristas.html">MAYORISTAS</a>
-                    </li>
-                    <li>
-                        <a title="Contacto" href="./contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <!--Menu -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" href="Pages/productos.html">
+                                PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item m-1" href="#">Agenda Anual</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Agenda Perpetua</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Agenda Universitaria</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Planner Docente</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Agenda Emprendedora</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Organizadores Tematicos</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Cuaderno Pediátrico</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Cuaderno Prenatal</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Memory Book</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Diario de la Infancia</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Pages/FAQ.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Pages/mayoristas.html">MAYORISTAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <!-- Fin Menu -->
+
+        <!-- FORMULARIO -->
         <section class="formulario">
             <h1>Formulario de contacto</h1>
             <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
@@ -110,6 +117,34 @@
                 <span> * </span>los campos son obligatorios.
             </p>
         </section>
+        <!-- MODAL -->
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary col-md-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            PEDIDOS PENDIENTES
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">PEDIDOS PENDIENTES</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        En el caso de querer consultar por un pedido ya hecho, comunicate directamente a nuestro
+                        Whatsapp!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" href="https://wa.me/2234222486"
+                            target="_blank">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer>
         <div class="footerContenedor">
@@ -159,6 +194,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
