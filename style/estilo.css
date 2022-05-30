@@ -42,22 +42,6 @@ header {
         left: 12%;
         width: 6%;
     }
-
-    .contenedorPadre {
-        display: grid;
-        grid-template-columns: 0.5fr 1fr 1fr 1fr;
-        grid-template-rows: 0.5fr 1.7fr 1.7fr 1.7fr;
-        gap: 5px 5px;
-        grid-template-areas:
-            "menu menu menu menu"
-            "video video video video"
-            "fraseVertical perpetua clasica turnos"
-            "fraseVertical perpetua2 clasica2 turnos2";
-        width: 90% auto;
-        height: 80vh auto;
-        margin: 20px auto
-    }
-
     /*Comienzo Menu*/
     .navbar {
         background: beige;
@@ -80,14 +64,19 @@ header {
 
     /*Fin Menu*/
 
-    .video {
-        margin: 0.2rem;
-        grid-area: video;
+    /*Index*/
 
-    }
-
-    .video video {
-        width: 100vw;
+    .contenedorIndex {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px 5px;
+        grid-template-areas:
+            "fraseVertical perpetua clasica turnos"
+            "fraseVertical perpetua2 clasica2 turnos2";
+        width: 90% auto;
+        height: 80vh auto;
+        margin: 20px auto
     }
 
     .fraseVertical {
@@ -340,12 +329,10 @@ header {
             display: none;
         }
 
-        .contenedorPadre {
+        .contenedorIndex {
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(8 auto);
+            grid-template-rows: repeat(6 auto);
             grid-template-areas:
-                "menu"
-                "video"
                 "perpetua"
                 "perpetua2"
                 "clasica"
@@ -365,18 +352,18 @@ header {
 
         .redes {
             margin: 0px auto;
-            align-self: center;
-            justify-self: center;
+            align-self: flex-start;
+            justify-self: flex-start;
         }
 
         .redes h1 {
-            text-align: center;
+            text-align: left;
         }
 
         .redes ul {
             display: flex;
             flex-direction: column;
-            text-align: center;
+            text-align: left;
         }
 
         .mediosDePago {
