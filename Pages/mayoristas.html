@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Img/icono.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel=" stylesheet" type="text/css" href="../style/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,90 +26,114 @@
     </header>
 
     <main>
-        <div class="contenedorMayoristas">
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li>
-                            <a title="Inicio" href="./index.html">INICIO</a>
+        <!-- Menu -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
                         </li>
-                        <li>
-                            <a title="Nosotros" href="./nosotros.html">NOSOTROS</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
                         </li>
-                        <li>
-                            <a title="Productos" href="./productos.html">PRODUCTOS</a>
-                            <ul>
-                                <li>
-                                    <a href="#" class="agendas">Agendas</a>
-                                </li>
-                                <li>
-                                    <a href="#">Planner Docente</a>
-                                </li>
-                                <li>
-                                    <a href="#">Organizadores</a>
-                                </li>
-                                <li>
-                                    <a href="#">Cuaderno Pediátrico</a>
-                                </li>
-                                <li>
-                                    <a href="#">Cuaderno Prenatal</a>
-                                </li>
-                                <li>
-                                    <a href="#">Diario de la Infancia</a>
-                                </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item m-1" href="#">Agenda Anual</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Agenda Perpetua</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Agenda Universitaria</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Planner Docente</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Agenda Emprendedora</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Organizadores Tematicos</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Cuaderno Pediátrico</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Cuaderno Prenatal</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Memory Book</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Diario de la Infancia</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a title="FAQ" href="./FAQ.html">FAQ</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./FAQ.html">FAQ</a>
                         </li>
-                        <li>
-                            <a title="Mayoristas" href="./mayoristas.html">MAYORISTAS</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./mayoristas.html">MAYORISTAS</a>
                         </li>
-                        <li>
-                            <a title="Contacto" href="./contacto.html">CONTACTO</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
             </div>
-            <!-- Fin Menu -->
+        </nav>
+        <!-- Fin Menu -->
+        
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm p-3">
+                        <div class="mayoristas">
+                            <form>
+                                <h1 class="animate__animated animate__bounceInDown">Que bueno tenerte acá!</h1>
+                                <div>
+                                    <label for="email">Usuario:</label>
+                                    <input type="email" name="Usuario" required class="inputMayorista">
+                                    <label for="password">Contraseña:</label>
+                                    <input type="password" name="Contraseña" class="inputMayorista">
+                                </div>
+                                <div>
+                                    <input type="submit" value="enviar" class="botonEnviarMay">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
-            <div class="mayoristas">
-                <form>
-                    <h1 class="animate__animated animate__bounceInDown">Que bueno tenerte acá!</h1>
-                    <div>
-                        <label for="email">Usuario:</label>
-                        <input type="email" name="Usuario" required class="inputMayorista">
-                        <label for="password">Contraseña:</label>
-                        <input type="password" name="Contraseña" class="inputMayorista">
+                    <div class="col-sm p-3">
+                        <div class="condicionesDeVenta">
+                            <fieldset class="border p-2">
+                                <legend class="w-auto">Condiciones de venta</legend>
+                                <h1>A tener en cuenta:</h1>
+                                <ul>
+                                    <li>Cantidad mínima 5 productos</li>
+                                    <li>Podés publicar los productos en tus redes y levantar pedidos personalizados, una
+                                        vez q
+                                        los
+                                        cerras cargarlos por este mismo medio.</li>
+                                    <li>Otra opción es para tener en stock sin nombre.</li>
+                                    <li>Demoramos 15 días en fabricar desde que se seña.</li>
+                                    <li>La seña es del 50% y debe estar saldado el 50% restante antes de realizar el
+                                        envío.</li>
+                                    <li>Enviamos por correo a argentino de Martes a Viernes. </li>
+                                    <li>Contamos con un catálogo de diseños, en el caso de querer una imagen fuera del
+                                        catálogo,
+                                        nos
+                                        la pueden enviar y se imprime tal cual nos la envían ( es decir q debes tener en
+                                        cuenta
+                                        q la
+                                        imagen sea de buena calidad para q se vea bien impresa)</li>
+                                    <br>
+                                    <li>Cualquier otra duda escribinos a upalaladi@gmail.com!</li>
+                                </ul>
+                            </fieldset>
+                        </div>
                     </div>
-                    <div>
-                        <input type="submit" value="enviar" class="botonEnviarMay">
-                    </div>
-                </form>
+                </div>
             </div>
-            <div class="condicionesDeVenta">
-                <fieldset>
-                    <legend>Condiciones de venta</legend>
-                    <h1>A tener en cuenta:</h1>
-                    <ul>
-                        <li>Cantidad mínima 5 productos</li>
-                        <li>Podés publicar los productos en tus redes y levantar pedidos personalizados, una vez q
-                            los
-                            cerras cargarlos por este mismo medio.</li>
-                        <li>Otra opción es para tener en stock sin nombre.</li>
-                        <li>Demoramos 15 días en fabricar desde que se seña.</li>
-                        <li>La seña es del 50% y debe estar saldado el 50% restante antes de realizar el envío.</li>
-                        <li>Enviamos por correo a argentino de Martes a Viernes. </li>
-                        <li>Contamos con un catálogo de diseños, en el caso de querer una imagen fuera del catálogo,
-                            nos
-                            la pueden enviar y se imprime tal cual nos la envían ( es decir q debes tener en cuenta
-                            q la
-                            imagen sea de buena calidad para q se vea bien impresa)</li>
-                        <br>
-                        <li>Cualquier otra duda escribinos a upalaladi@gmail.com!</li>
-                    </ul>
-                </fieldset>
             </div>
+        </section>
+
+
+
+
+
         </div>
     </main>
 
@@ -161,8 +185,8 @@
             </div>
         </div>
     </footer>
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 </body>

@@ -717,15 +717,25 @@ header {
         font-size: 13px;
     }
 
+
     .btn-primary {
         --bs-btn-bg: beige;
         --bs-btn-border-color:#74610d;
         --bs-btn-hover-bg:#74610d;
-        color: #74610d;
+        --bs-btn-color:#74610d;
         --bs-btn-hover-border-color:#74610d;
-        margin-left: 33%;
+        --bs-btn-active-bg:#74610d;
+        color: #74610d
     }
 
+    .btn a{
+        color: #74610d;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: white;
+    }
 
     /*FIN CONTACTO*/
 
@@ -736,7 +746,6 @@ header {
         grid-template-rows: 0.2fr 1.8fr;
         gap: 6px 6px;
         grid-template-areas:
-            "menu menu"
             "mayoristas condicionesDeVenta";
         width: 90% auto;
         height: 50vh auto;
