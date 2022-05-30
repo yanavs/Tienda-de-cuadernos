@@ -25,54 +25,59 @@
         <img src="../Img/logo.svg" alt="Logo" class="headerLogo animate__animated animate__pulse animate__infinite">
     </header>
     <main>
-        <div class="contenedorNosotros">
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li>
-                            <a title="Inicio" href="./index.html">INICIO</a>
+        <!-- Menu -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
                         </li>
-                        <li>
-                            <a title="Nosotros" href="./nosotros.html">NOSOTROS</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
                         </li>
-                        <li>
-                            <a title="Productos" href="./productos.html">PRODUCTOS</a>
-                            <ul>
-                                <li>
-                                    <a href="#" class="agendas">Agendas</a>
-                                </li>
-                                <li>
-                                    <a href="#">Planner Docente</a>
-                                </li>
-                                <li>
-                                    <a href="#">Organizadores</a>
-                                </li>
-                                <li>
-                                    <a href="#">Cuaderno Pediátrico</a>
-                                </li>
-                                <li>
-                                    <a href="#">Cuaderno Prenatal</a>
-                                </li>
-                                <li>
-                                    <a href="#">Diario de la Infancia</a>
-                                </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item m-1" href="#">Agenda Anual</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Agenda Perpetua</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Agenda Universitaria</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Planner Docente</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Agenda Emprendedora</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Organizadores Tematicos</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Cuaderno Pediátrico</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Cuaderno Prenatal</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Memory Book</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Diario de la Infancia</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a title="FAQ" href="./FAQ.html">FAQ</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./FAQ.html">FAQ</a>
                         </li>
-                        <li>
-                            <a title="Mayoristas" href="./mayoristas.html">MAYORISTAS</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./mayoristas.html">MAYORISTAS</a>
                         </li>
-                        <li>
-                            <a title="Contacto" href="./contacto.html">CONTACTO</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
             </div>
-            <!-- Fin Menu -->
+        </nav>
+        <!-- Fin Menu -->
+
+        <div class="contenedorNosotros">
             <div class="fotoNosotros">
-                <img src="../Img/yo.jpg" alt="Nosotros">
+                <img src="../Img/yo.jpg" alt="Nosotros" max-widht="100%">
             </div>
             <div class="textoNosotros">
                 <p> Soy diseñadora industrial, especializada en productos, recibida en la universidad de Mar del
@@ -119,6 +124,7 @@
                 <img src="../Img/forrar.jpg" alt="cuadernos" class="pimg">
             </div>
         </div>
+    </div>
     </main>
 
     <footer>
