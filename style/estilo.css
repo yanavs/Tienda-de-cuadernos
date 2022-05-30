@@ -47,6 +47,34 @@ header {
         background: beige;
         margin: 1rem;
     }
+=======
+    bottom: 10%;
+    right: 20%;
+    color: white;
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+.headerLogo {
+    position: absolute;
+    top: 17%;
+    left: 12%;
+    width: 7%;
+    z-index: 1;
+}
+
+@media screen and (max-width:600px) {
+    .headerTexto {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .headerTexto {
+        font-size: 0.5rem;
+    }
+}
+>>>>>>> bootsrap
 
     .nav-link {
         color: #74610d;
@@ -56,14 +84,27 @@ header {
         background-color: beige;
     }
 
+<<<<<<< HEAD
     .navbar-nav li a:hover {
         border: 1px #74610d solid;
         border-radius: 2px;
         opacity: 77%;
     }
+=======
+.dropdown-menu {
+    background-color: beige;
+}
+
+.navbar-nav li a:hover {
+    border: 1px #74610d solid;
+    border-radius: 2px;
+    opacity: 77%;
+}
+>>>>>>> bootsrap
 
     /*Fin Menu*/
 
+<<<<<<< HEAD
     /*Index*/
 
     .contenedorIndex {
@@ -82,6 +123,299 @@ header {
     .fraseVertical {
         grid-area: fraseVertical;
         margin: 4rem;
+=======
+.contenedorIndex {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+        "menu menu menu menu"
+        "video video video video"
+        "fraseVertical perpetua clasica turnos"
+        "fraseVertical perpetua2 clasica2 turnos2";
+    width: 90% auto;
+    height: 80vh auto;
+    margin: 20px auto
+}
+
+.fraseVertical {
+    grid-area: fraseVertical;
+    margin: 4rem;
+    align-self: center;
+}
+
+.fraseVertical img {
+    height: 60rem;
+}
+
+/*presentacion de productos index*/
+
+.diseños {
+    border: #74610d 3px solid;
+    border-style: double;
+}
+
+.perpetua {
+    width: 250px;
+    grid-area: perpetua;
+    justify-self: center;
+}
+
+.perpetua img {
+    width: 16rem;
+    margin: 1rem;
+}
+
+.perpetua2 {
+    grid-area: perpetua2;
+    width: 250px;
+    justify-self: center;
+}
+
+.perpetua2 img {
+    width: 16rem;
+    margin: 1rem;
+}
+
+.clasica {
+    grid-area: clasica;
+    width: 250px;
+    justify-self: center;
+}
+
+.clasica img {
+    width: 16rem;
+    margin: 1rem;
+}
+
+.clasica2 {
+    grid-area: clasica2;
+    width: 250px;
+    justify-self: center;
+}
+
+.clasica2 img {
+    width: 16rem;
+    margin: 1rem;
+}
+
+.turnos {
+    grid-area: turnos;
+    width: 250px;
+    justify-self: center;
+}
+
+.turnos img {
+    width: 16rem;
+    margin: 1rem;
+}
+
+.turnos2 {
+    grid-area: turnos2;
+    width: 250px;
+    justify-self: center;
+}
+
+.turnos2 img {
+    width: 16rem;
+    margin: 1rem;
+}
+
+.iconos {
+    display: flex;
+    width: 12rem;
+}
+
+.iconos img {
+    width: 3.5rem;
+    transition: all .2s ease-in-out;
+}
+
+.iconos img:hover {
+    transform: scale(1.5);
+}
+
+/* Fin presentacion de productos index*/
+
+/*footer*/
+footer {
+    background-color: beige;
+    height: auto;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.footerContenedor {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr 1fr;
+    grid-template-rows: 1.4fr 0.6fr;
+    gap: 5px 5px;
+    grid-template-areas:
+        "mediosDePago . newslater"
+        "mediosDePago . redes";
+    width: 100vh auto;
+    height: 20vh auto;
+    margin: auto;
+}
+
+
+.mediosDePago {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    grid-area: mediosDePago;
+}
+
+.mediosDePago h1 {
+    font-size: smaller;
+    font-weight: bold;
+}
+
+.mediosDePago ul li {
+    line-height: 3rem;
+    list-style: none;
+    font-size: small;
+}
+
+.mediosDePago img {
+    width: 1rem;
+}
+
+.newslater {
+    font-size: smaller;
+    margin-top: 2rem;
+    grid-area: newslater;
+    background-color: beige;
+    justify-items: left;
+}
+
+.newslater form {
+    width: 100% auto;
+    padding: 1rem;
+}
+
+.newslater form fieldset {
+    height: 10rem;
+    width: 100%;
+    padding: 1rem;
+    color: #74610d;
+    border-radius: 0.2rem;
+}
+
+.inputNewslater {
+    display: flex;
+    background-color: #ffffff;
+    width: 100%;
+    height: 1.2rem;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #74610d;
+}
+
+.enviarBottom {
+    background-color: #ffffff;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #74610d;
+    margin-top: 3px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+.redes {
+    grid-area: redes;
+    margin-right: 6rem;
+}
+
+.redes ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes h1 {
+    font-size: small;
+    margin-left: 3rem;
+    font-weight: bold;
+
+}
+
+.redes li {
+    list-style-type: none;
+    text-align: center;
+    margin: 0.7rem;
+    background-color: beige;
+    padding: 0.7rem;
+    margin-top: 0px;
+
+}
+
+.redes li a {
+    text-decoration: none;
+    font-size: small;
+    color: #74610d;
+}
+
+.redes img {
+    width: 1.6rem;
+    vertical-align: middle;
+    padding: 2px;
+}
+
+
+/*BOTON FLOTANTE*/
+.whatsAppFlotante h6 {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    font-size: 15px;
+    z-index: 999;
+}
+
+.whatsAppFlotante img {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    margin-right: 0.7rem;
+}
+
+@media screen and (max-width:768px) {
+    .fraseVertical {
+        display: none;
+    }
+
+    .contenedorIndex {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6 auto);
+        grid-template-areas:
+            "perpetua"
+            "perpetua2"
+            "clasica"
+            "clasica2"
+            "turnos"
+            "turnos2";
+    }
+
+    .footerContenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3 auto);
+        grid-template-areas:
+            "mediosDePago"
+            "newslater"
+            "redes";
+    }
+
+    .redes {
+        margin: 0px auto;
+>>>>>>> bootsrap
         align-self: center;
     }
 
@@ -302,6 +636,22 @@ header {
         padding: 2px;
     }
 
+<<<<<<< HEAD
+=======
+/*Nosotros*/
+.contenedorNosotros {
+    display: grid;
+    grid-template-columns: 1.6fr repeat(4, 1fr);
+    grid-template-rows: 2fr 0.5fr;
+    gap: 5px 5px;
+    grid-template-areas:
+        "fotoNosotros textoNosotros textoNosotros textoNosotros textoNosotros"
+        "fotoNosotros proceso1 proceso2 proceso3 proceso4";
+    width: 80% auto;
+    height: 50vh auto;
+    margin: 4rem auto;
+}
+>>>>>>> bootsrap
 
     /*BOTON FLOTANTE*/
     .whatsAppFlotante h6 {
@@ -314,6 +664,7 @@ header {
         z-index: 999;
     }
 
+<<<<<<< HEAD
     .whatsAppFlotante img {
         width: 3.5rem;
         height: 3.5rem;
@@ -323,12 +674,20 @@ header {
         z-index: 999;
         margin-right: 0.7rem;
     }
+=======
+.fotoNosotros img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 1rem;
+}
+>>>>>>> bootsrap
 
     @media screen and (max-width:768px) {
         .fraseVertical {
             display: none;
         }
 
+<<<<<<< HEAD
         .contenedorIndex {
             grid-template-columns: 1fr;
             grid-template-rows: repeat(6 auto);
@@ -340,6 +699,15 @@ header {
                 "turnos"
                 "turnos2";
         }
+=======
+.textoNosotros p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: justify;
+    line-height: 270%;
+    font-size: 0.85rem;
+}
+>>>>>>> bootsrap
 
         .footerContenedor {
             grid-template-columns: 1fr;
@@ -380,6 +748,7 @@ header {
 
     /*Nosotros*/
     .contenedorNosotros {
+<<<<<<< HEAD
         display: grid;
         grid-template-columns: 1.6fr repeat(4, 1fr);
         grid-template-rows: 0.4fr 2fr 0.5fr;
@@ -397,11 +766,41 @@ header {
         grid-area: fotoNosotros;
         justify-items: center;
         text-align: center;
+=======
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 0px 0px;
+        grid-template-areas:
+            "fotoNosotros fotoNosotros"
+            "textoNosotros textoNosotros"
+            "proceso1 proceso2"
+            "proceso3 proceso4";
+>>>>>>> bootsrap
     }
+}
 
+@media screen and (max-width:480px) {
+    .contenedorNosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 0px 0px;
+        grid-template-areas:
+            "fotoNosotros fotoNosotros"
+            "textoNosotros textoNosotros"
+            "proceso1 proceso2"
+            "proceso3 proceso4";
+    }
+    .textoNosotros p {
+        font-size: 0.8rem;
+    }
     .fotoNosotros img {
+<<<<<<< HEAD
         height: 50rem;
         margin-left: 1rem;
+=======
+        max-width: 100%;
+        height: auto;
+>>>>>>> bootsrap
     }
 
     .textoNosotros {
@@ -415,6 +814,7 @@ header {
         line-height: 270%;
     }
 
+<<<<<<< HEAD
     .proceso1 {
         grid-area: proceso1;
     }
@@ -422,6 +822,8 @@ header {
     .proceso2 {
         grid-area: proceso2;
     }
+=======
+>>>>>>> bootsrap
 
     .proceso3 {
         grid-area: proceso3;
@@ -444,6 +846,7 @@ header {
         transform: scale(1.5);
     }
 
+<<<<<<< HEAD
     @media screen and (max-width:768px) {
         .contenedorNosotros {
             grid-template-columns: 1fr 1fr;
@@ -482,6 +885,41 @@ header {
         height: 50vh auto;
         margin: 10px auto;
     }
+=======
+.irATienda {
+    margin-top: auto;
+    padding: 1rem;
+
+}
+.irATienda a{
+    text-decoration: none;
+    color: #74610d;
+}
+
+
+
+.conocemas {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #74610d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px auto;
+    padding: 3%
+}
+
+.conocemas a {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+>>>>>>> bootsrap
 
     .contInfo {
         display: flex;
@@ -705,7 +1143,231 @@ header {
 
     /*FIN CONTACTO*/
 
+<<<<<<< HEAD
     /*MAYORISTAS*/
+=======
+/*Contacto Formulario*/
+.formulario {
+    width: 480px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background: #f4f4ed;
+    background: -moz-linear-gradient(top, #f4f4ed 0%, #f5f5dc 100%);
+    background: -webkit-linear-gradient(top, #f4f4ed 0%, #f5f5dc 100%);
+    background: linear-gradient(to bottom, #f4f4ed 0%, #f5f5dc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4ed', endColorstr='#f5f5dc', GradientType=0);
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario h1 {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.formulario h3 {
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+}
+
+.formulario input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #74610d;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.textarea {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #74610d;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+.botonenviar {
+    font-style: oblique;
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: beige;
+    border-color: #74610d;
+    border-style: solid;
+    border-radius: 10px;
+    width: 408px;
+    cursor: pointer;
+}
+
+.botonenviar p {
+    text-align: center;
+    vertical-align: middle;
+    padding: 2%;
+}
+
+
+
+.aviso {
+    font-size: 13px;
+}
+
+
+.btn-primary {
+    margin-left: 33%;
+    --bs-btn-bg: beige;
+    --bs-btn-border-color: #74610d;
+    --bs-btn-hover-bg: #74610d;
+    --bs-btn-color: #74610d;
+    --bs-btn-hover-border-color: #74610d;
+    --bs-btn-active-bg: #74610d;
+    color: #74610d
+}
+
+.btn a {
+    color: #74610d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+/*FIN CONTACTO*/
+
+/*MAYORISTAS*/
+.contenedorMayoristas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.2fr 1.8fr;
+    gap: 6px 6px;
+    grid-template-areas:
+        "mayoristas condicionesDeVenta";
+    width: 90% auto;
+    height: 50vh auto;
+    margin: 20px auto;
+}
+
+.mayoristas {
+    grid-area: mayoristas;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+}
+
+
+
+
+.mayoristas form h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.mayoristas label {
+    margin-bottom: 1rem;
+}
+
+.inputMayorista {
+    background-color: #fbfbfb;
+    width: 100%;
+    height: 1.2rem;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #74610d;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.botonEnviarMay {
+    background-color: #ffffff;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 3px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+.botonEnviarMay:hover {
+    background-color: beige;
+}
+
+.condicionesDeVenta {
+    width: 90%;
+    grid-area: condicionesDeVenta;
+    align-self: center;
+    justify-self: start;
+    margin: 0px auto;
+}
+
+.condicionesDeVenta legend {
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.condicionesDeVenta form {
+    width: 100% auto;
+    padding: 1rem;
+}
+
+.condicionesDeVenta form fieldset {
+    height: 10rem;
+    width: 100%;
+    padding: 1rem;
+    color: #74610d;
+    border-radius: 0.2rem;
+}
+
+.condicionesDeVenta h1 {
+    width: 100%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    text-align: justify;
+}
+
+.condicionesDeVenta ul {
+    line-height: 2rem;
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width:768px) {
+>>>>>>> bootsrap
     .contenedorMayoristas {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -725,6 +1387,7 @@ header {
         justify-self: center;
         width: 50%;
     }
+<<<<<<< HEAD
 
 
 
@@ -888,4 +1551,6 @@ nav {
     border: 1px #74610d solid;
     border-radius: 2px;
     opacity: 77%;
+=======
+>>>>>>> bootsrap
 }
