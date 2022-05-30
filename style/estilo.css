@@ -547,18 +547,6 @@ footer {
 }
 
 @media screen and (max-width:768px) {
-    .contenedorProductos {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, auto);
-        gap: 3px 3px;
-        grid-template-areas:
-            "menu"
-            "producto1"
-            "producto2"
-            "producto3"
-            "producto4"
-            "producto5";
-    }
 
     .contInfo {
         display: flex;
@@ -691,6 +679,7 @@ footer {
 
 
 .btn-primary {
+    margin-left: 33%;
     --bs-btn-bg: beige;
     --bs-btn-border-color: #74610d;
     --bs-btn-hover-bg: #74610d;
