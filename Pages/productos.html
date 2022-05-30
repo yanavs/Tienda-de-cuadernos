@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Img/icono.png"">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel=" stylesheet" type="text/css" href="../style/estilo.css" >
+    <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel=" stylesheet" type="text/css" href="../style/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Roboto&display=swap"
@@ -26,61 +26,65 @@
     </header>
 
     <main>
-        <div class="contenedorProductos">
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li>
-                            <a title="Inicio" href="../index.html">INICIO</a>
+        <!-- Menu -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
                         </li>
-                        <li>
-                            <a title="Nosotros" href="./nosotros.html">NOSOTROS</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
                         </li>
-                        <li>
-                            <a title="Productos" href="./productos.html">PRODUCTOS</a>
-                            <ul>
-                                <li>
-                                    <a href="#" class="agendas">Agendas</a>
-                                </li>
-                                <li>
-                                    <a href="#">Planner Docente</a>
-                                </li>
-                                <li>
-                                    <a href="#">Organizadores</a>
-                                </li>
-                                <li>
-                                    <a href="#">Cuaderno Pediátrico</a>
-                                </li>
-                                <li>
-                                    <a href="#">Cuaderno Prenatal</a>
-                                </li>
-                                <li>
-                                    <a href="#">Diario de la Infancia</a>
-                                </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item m-1" href="#">Agenda Anual</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Agenda Perpetua</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Agenda Universitaria</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Planner Docente</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Agenda Emprendedora</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Organizadores Tematicos</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Cuaderno Pediátrico</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Cuaderno Prenatal</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Memory Book</a></li>
+                                <li><a class="dropdown-item m-1" href="#">Diario de la Infancia</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a title="FAQ" href="./FAQ.html">FAQ</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./FAQ.html">FAQ</a>
                         </li>
-                        <li>
-                            <a title="Mayoristas" href="./mayoristas.html">MAYORISTAS</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./mayoristas.html">MAYORISTAS</a>
                         </li>
-                        <li>
-                            <a title="Contacto" href="./contacto.html">CONTACTO</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
             </div>
-            <!-- Fin Menu -->
+        </nav>
+        <!-- Fin Menu -->
 
-            <!-- Comienzo de presentación de productos -->
-            <div class="producto1">
-                <fieldset>
-                    <legend> Agenda Clásica </legend>
-                    <div class="contInfo">
-                        <div class="fotoProducto">
-                            <img src="../Img/agclasica1.png" alt="Agenda Clásica">
-                        </div>
+ <!-- Comienzo de presentación de productos -->
+        <div class="card mb-3 mx-auto" style="max-width: 97%;">
+            <div class="row g-0">
+                <div class="col-md-7">
+                    <img src="../Img/agclasica1.png" class="img-fluid rounded-start" alt="Agenda Clásica">
+                </div>
+                <div class="col-md-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Agenda Clásica</h5>
                         <div class="textoProducto">
                             <h1> Contenido: </h1>
                             <ul>
@@ -109,15 +113,19 @@
                                 Ir a la tienda >>>
                             </a>
                         </div>
-                </fieldset>
+                    </div>
+                </div>
             </div>
-            <div class="producto2">
-                <fieldset>
-                    <legend> Agenda Universitaria </legend>
-                    <div class="contInfo">
-                        <div class="fotoProducto">
-                            <img src="../Img/agfacultad.jpg" alt=Agenda Clásica>
-                        </div>
+        </div>
+
+        <div class="card mb-3 mx-auto" style="max-width: 97%;">
+            <div class="row g-0">
+                <div class="col-md-7">
+                    <img src="../Img/agfacultad.jpg" class="img-fluid rounded-start" alt="Agenda Universitaria">
+                </div>
+                <div class="col-md-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Agenda Universitaria</h5>
                         <div class="textoProducto">
                             <h1> Contenido: </h1>
                             <ul>
@@ -148,31 +156,35 @@
                                 Ir a la tienda >>>
                             </a>
                         </div>
-                </fieldset>
+                    </div>
+                </div>
             </div>
-            <div class="producto3">
-                <fieldset>
-                    <legend> Agenda Turnos </legend>
-                    <div class="contInfo">
-                        <div class="fotoProducto">
-                            <img src="../Img/agturnos.jpg" alt=Agenda Clásica>
-                        </div>
+        </div>
+
+        <div class="card mb-3 mx-auto" style="max-width: 97%;">
+            <div class="row g-0">
+                <div class="col-md-7">
+                    <img src="../Img/agturnos.jpg" class="img-fluid rounded-start" alt="Agenda Turnos">
+                </div>
+                <div class="col-md-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Agenda Turnos</h5>
                         <div class="textoProducto">
                             <h1> Contenido: </h1>
-                            <ul>
-                                <li>Ideal profesionales</li>
-                                <li>
-                                    Bolsillo para papeles importantes
-                                </li>
-                                <li>
-                                    Calendario 2022/2023
-                                </li>
-                                <li>Semana a la vista con horarios</li>
-                                <li>Planner mensual</li>
-                                <li>Sector notas (cuadriculado y rayado)</li>
-                                <li>Gastos</li>
-                                <li>Gastos anuales</li>
-                                <li>Contraseñas</li>
+                        <ul>
+                            <li>Ideal profesionales</li>
+                            <li>
+                                Bolsillo para papeles importantes
+                            </li>
+                            <li>
+                                Calendario 2022/2023
+                            </li>
+                            <li>Semana a la vista con horarios</li>
+                            <li>Planner mensual</li>
+                            <li>Sector notas (cuadriculado y rayado)</li>
+                            <li>Gastos</li>
+                            <li>Gastos anuales</li>
+                            <li>Contraseñas</li>
                             </ul>
                         </div>
                         <div class="irATienda">
@@ -180,35 +192,39 @@
                                 Ir a la tienda >>>
                             </a>
                         </div>
-                </fieldset>
+                    </div>
+                </div>
             </div>
-            <div class="producto4">
-                <fieldset>
-                    <legend> Agenda Emprendedora </legend>
-                    <div class="contInfo">
-                        <div class="fotoProducto">
-                            <img src="../Img/agemprendedora.jpg" alt=Agenda Clásica>
-                        </div>
+        </div>
+
+        <div class="card mb-3 mx-auto" style="max-width: 97%;">
+            <div class="row g-0">
+                <div class="col-md-7">
+                    <img src="../Img/agemprendedora.jpg" class="img-fluid rounded-start" alt="Agenda Emprendedora">
+                </div>
+                <div class="col-md-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Agenda Emprendedora</h5>
                         <div class="textoProducto">
                             <h1> Contenido: </h1>
-                            <ul>
-                                <li>
-                                    Bolsillo para papeles importantes
-                                </li>
-                                <li>Datos personales
-                                </li>
-                                <li>Planner mensual perpetuo</li>
-                                <li>(para que lo utilices según tus necesidades, por ejemplo para anotar entregas o
-                                    envios)
-                                </li>
-                                <li>Ventas:</li>
-                                <li>Número / Pedido / Cliente / Precio / Entrega / Saldo/ Observaciones</li>
-                                <li>Insumos</li>
-                                <li>Producto / Detalle / Precio de Compra / Precio de Venta</li>
-                                <li>entregas</li>
-                                <li>Cliente / forma de contacto / dirección / producto que retira</li>
-                                <li>Gastos</li>
-                                <li>Notas</li>
+                        <ul>
+                            <li>
+                                Bolsillo para papeles importantes
+                            </li>
+                            <li>Datos personales
+                            </li>
+                            <li>Planner mensual perpetuo</li>
+                            <li>(para que lo utilices según tus necesidades, por ejemplo para anotar entregas o
+                                envios)
+                            </li>
+                            <li>Ventas:</li>
+                            <li>Número / Pedido / Cliente / Precio / Entrega / Saldo/ Observaciones</li>
+                            <li>Insumos</li>
+                            <li>Producto / Detalle / Precio de Compra / Precio de Venta</li>
+                            <li>entregas</li>
+                            <li>Cliente / forma de contacto / dirección / producto que retira</li>
+                            <li>Gastos</li>
+                            <li>Notas</li>
                             </ul>
                         </div>
                         <div class="irATienda">
@@ -216,15 +232,19 @@
                                 Ir a la tienda >>>
                             </a>
                         </div>
-                </fieldset>
+                    </div>
+                </div>
             </div>
-            <div class="producto5">
-                <fieldset>
-                    <legend> Memory Book </legend>
-                    <div class="contInfo">
-                        <div class="fotoProducto">
-                            <img src="../Img/agabuelos.jpg" alt=Agenda Clásica>
-                        </div>
+        </div>
+
+        <div class="card mb-3 mx-auto" style="max-width: 97%;">
+            <div class="row g-0">
+                <div class="col-md-7">
+                    <img src="../Img/agabuelos.jpg" class="img-fluid rounded-start" alt="Memory Book">
+                </div>
+                <div class="col-md-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Memory Book</h5>
                         <div class="textoProducto">
                             <h1> Contenido: </h1>
                             <ul>
@@ -245,9 +265,12 @@
                                 Ir a la tienda >>>
                             </a>
                         </div>
-                </fieldset>
+                    </div>
+                </div>
             </div>
         </div>
+
+
         <div class="conocemas">
             <a href="#"> + </a>
         </div>
@@ -301,8 +324,8 @@
             </div>
         </div>
     </footer>
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 </body>

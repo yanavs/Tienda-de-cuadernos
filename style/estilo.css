@@ -417,6 +417,7 @@ footer {
     margin-right: 2rem;
     text-align: justify;
     line-height: 270%;
+    font-size: 0.85rem;
 }
 
 .proceso1 {
@@ -476,7 +477,7 @@ footer {
         font-size: 0.8rem;
     }
     .fotoNosotros img {
-        max-width: 90%;
+        max-width: 100%;
         height: auto;
     }
 }
@@ -485,27 +486,6 @@ footer {
 
 /*Productos*/
 
-.contenedorProductos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.4fr repeat(5, 1fr);
-    gap: 5px 5px;
-    grid-template-areas:
-        "menu menu menu"
-        "producto1 producto1 producto1"
-        "producto2 producto2 producto2"
-        "producto3 producto3 producto3"
-        "producto4 producto4 producto4"
-        "producto5 producto5 producto5";
-    width: 80% auto;
-    height: 50vh auto;
-    margin: 10px auto;
-}
-
-.contInfo {
-    display: flex;
-    justify-content: left;
-}
 
 .fotoProducto img {
     height: 25rem;
@@ -536,39 +516,15 @@ footer {
 
 .irATienda {
     margin-top: auto;
-    margin-left: auto;
     padding: 1rem;
+
+}
+.irATienda a{
+    text-decoration: none;
+    color: #74610d;
 }
 
-.producto1 {
-    grid-area: producto1;
-    width: 95%;
-    margin: 2rem;
-}
 
-.producto2 {
-    grid-area: producto2;
-    width: 95%;
-    margin: 2rem;
-}
-
-.producto3 {
-    grid-area: producto3;
-    width: 95%;
-    margin: 2rem;
-}
-
-.producto4 {
-    grid-area: producto4;
-    width: 95%;
-    margin: 2rem;
-}
-
-.producto5 {
-    grid-area: producto5;
-    width: 95%;
-    margin: 2rem;
-}
 
 .conocemas {
     width: 4rem;
