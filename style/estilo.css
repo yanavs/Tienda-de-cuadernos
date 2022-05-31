@@ -542,7 +542,7 @@ footer {
     align-items: center;
     text-align: center;
     margin: 0px auto;
-    padding: 3%
+    padding: 3%;
 }
 
 .conocemas a {
@@ -702,9 +702,12 @@ footer {
     color: #74610d
 }
 
-.btn a {
+.btn p {
     color: #74610d;
     text-decoration: none;
+    padding: 2%;
+    margin: 0px auto;
+    font-size: 80%;
 }
 
 a:hover {
