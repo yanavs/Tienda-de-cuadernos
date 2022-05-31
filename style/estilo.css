@@ -709,6 +709,10 @@ footer {
     margin: 0px auto;
     font-size: 80%;
 }
+.btn a {
+    color: #74610d;
+    text-decoration: none;
+}
 
 a:hover {
     color: white;
