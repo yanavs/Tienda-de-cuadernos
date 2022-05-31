@@ -355,9 +355,7 @@ footer {
     }
 
     .redes {
-        margin: 0px auto;
-        align-self: center;
-        justify-self: center;
+        margin-top: 3rem;
     }
 
     .redes h1 {
@@ -477,7 +475,9 @@ footer {
         font-size: 0.8rem;
     }
     .fotoNosotros img {
-        max-width: 100%;
+        max-width: 80%;
+        margin: 0px auto;
+        margin-bottom: 3rem;
         height: auto;
     }
 }
@@ -494,24 +494,26 @@ footer {
 }
 
 .textoProducto h1 {
-    font-size: 16px;
+    font-size: 1rem;
     margin-top: 2rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-bottom: 1rem;
 }
 
 .textoProducto ul {
     list-style: none;
     margin-bottom: 2rem;
+    margin-right: 10%;
 }
 
 .textoProducto ul li {
     width: 20rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 0.7rem;
+    margin-right: 10%;
     text-align: justify;
     line-height: 220%;
-    font-size: 0.75rem;
+    font-size: 90%;
+    padding: 1%;
 }
 
 .irATienda {
@@ -590,7 +592,7 @@ footer {
 
 /*Contacto Formulario*/
 .formulario {
-    width: 480px;
+    width: 35%;
     height: auto;
     margin: auto;
     margin-bottom: 2rem;
@@ -606,6 +608,13 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media screen and (max-width:768px) {
+    .formulario {
+        width: auto;
+        margin: 2rem;
+}
 }
 
 .formulario h1 {
@@ -624,7 +633,7 @@ footer {
 
 .formulario input {
     background-color: #fbfbfb;
-    width: 408px;
+    width: 90%;
     height: 20px;
     border-radius: 5px;
     border-style: solid;
@@ -637,7 +646,7 @@ footer {
 
 .textarea {
     background-color: #fbfbfb;
-    width: 408px;
+    width: 90%;
     height: 150px;
     border-radius: 5px;
     border-style: solid;
@@ -661,7 +670,7 @@ footer {
     border-color: #74610d;
     border-style: solid;
     border-radius: 10px;
-    width: 408px;
+    width: 90%;
     cursor: pointer;
 }
 
@@ -817,5 +826,11 @@ a:hover {
             "menu"
             "mayoristas"
             "condicionesDeVenta";
+    }
+    .forMay {
+        width: 60vh;
+    }
+    .mayoristas form{
+        width: 60vh;
     }
 }
