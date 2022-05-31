@@ -480,6 +480,10 @@ footer {
         margin-bottom: 3rem;
         height: auto;
     }
+    .pimg {
+        margin:0rem;
+        margin-top: 1rem;
+    }
 }
 
 /*Fin Nosotros*/
@@ -832,5 +836,8 @@ a:hover {
     }
     .mayoristas form{
         width: 60vh;
+    }
+    .inputMayorista{
+        width: 70%;
     }
 }
