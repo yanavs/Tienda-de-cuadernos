@@ -31,17 +31,7 @@ header {
     z-index: 1;
 }
 
-@media screen and (max-width:600px) {
-    .headerTexto {
-        font-size: 0.9rem;
-    }
-}
 
-@media screen and (max-width:420px) {
-    .headerTexto {
-        font-size: 0.5rem;
-    }
-}
 
 /*Comienzo Menu*/
 .navbar {
@@ -202,8 +192,8 @@ footer {
 
 
 .mediosDePago {
-    margin-left: 5rem;
-    margin-top: 2rem;
+    margin-left: 10%;
+    margin-top: 10%;
     grid-area: mediosDePago;
 }
 
@@ -328,57 +318,7 @@ footer {
     margin-right: 0.7rem;
 }
 
-@media screen and (max-width:768px) {
-    .fraseVertical {
-        display: none;
-    }
 
-    .contenedorIndex {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6 auto);
-        grid-template-areas:
-            "perpetua"
-            "perpetua2"
-            "clasica"
-            "clasica2"
-            "turnos"
-            "turnos2";
-    }
-
-    .footerContenedor {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3 auto);
-        grid-template-areas:
-            "mediosDePago"
-            "newslater"
-            "redes";
-    }
-
-    .redes {
-        margin-top: 3rem;
-    }
-
-    .redes h1 {
-        text-align: center;
-    }
-
-    .redes ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .mediosDePago {
-        margin: 0px auto;
-        text-align: center;
-        align-self: center;
-        justify-self: center;
-    }
-
-    .newslater {
-        margin-top: 0.5rem;
-    }
-}
 
 /*Nosotros*/
 .contenedorNosotros {
@@ -447,45 +387,6 @@ footer {
     transform: scale(1.5);
 }
 
-@media screen and (max-width:768px) {
-    .contenedorNosotros {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
-        gap: 0px 0px;
-        grid-template-areas:
-            "fotoNosotros fotoNosotros"
-            "textoNosotros textoNosotros"
-            "proceso1 proceso2"
-            "proceso3 proceso4";
-    }
-}
-
-@media screen and (max-width:480px) {
-    .contenedorNosotros {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
-        gap: 0px 0px;
-        grid-template-areas:
-            "fotoNosotros fotoNosotros"
-            "textoNosotros textoNosotros"
-            "proceso1 proceso2"
-            "proceso3 proceso4";
-    }
-    .textoNosotros p {
-        font-size: 0.8rem;
-    }
-    .fotoNosotros img {
-        max-width: 80%;
-        margin: 0px auto;
-        margin-bottom: 3rem;
-        height: auto;
-    }
-    .pimg {
-        margin:0rem;
-        margin-top: 1rem;
-    }
-}
-
 /*Fin Nosotros*/
 
 /*Productos*/
@@ -508,6 +409,7 @@ footer {
     list-style: none;
     margin-bottom: 2rem;
     margin-right: 10%;
+    padding: 2%;
 }
 
 .textoProducto ul li {
@@ -525,7 +427,8 @@ footer {
     padding: 1rem;
 
 }
-.irATienda a{
+
+.irATienda a {
     text-decoration: none;
     color: #74610d;
 }
@@ -550,15 +453,6 @@ footer {
     color: white;
     font-size: 3rem;
     font-weight: bold;
-}
-
-@media screen and (max-width:768px) {
-
-    .contInfo {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
 }
 
 /*Fin Productos*/
@@ -601,6 +495,7 @@ footer {
     margin: auto;
     margin-bottom: 2rem;
     border-radius: 10px;
+    padding: 7%;
     padding-top: 30px;
     padding-bottom: 20px;
     background: #f4f4ed;
@@ -608,18 +503,12 @@ footer {
     background: -webkit-linear-gradient(top, #f4f4ed 0%, #f5f5dc 100%);
     background: linear-gradient(to bottom, #f4f4ed 0%, #f5f5dc 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4ed', endColorstr='#f5f5dc', GradientType=0);
-    padding-left: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-@media screen and (max-width:768px) {
-    .formulario {
-        width: auto;
-        margin: 2rem;
-}
-}
+
 
 .formulario h1 {
     margin: auto;
@@ -637,7 +526,7 @@ footer {
 
 .formulario input {
     background-color: #fbfbfb;
-    width: 90%;
+    width: 100%;
     height: 20px;
     border-radius: 5px;
     border-style: solid;
@@ -650,7 +539,7 @@ footer {
 
 .textarea {
     background-color: #fbfbfb;
-    width: 90%;
+    width: 100%;
     height: 150px;
     border-radius: 5px;
     border-style: solid;
@@ -674,7 +563,7 @@ footer {
     border-color: #74610d;
     border-style: solid;
     border-radius: 10px;
-    width: 90%;
+    width: 100%;
     cursor: pointer;
 }
 
@@ -695,10 +584,10 @@ footer {
     margin-left: 33%;
     --bs-btn-bg: beige;
     --bs-btn-border-color: #74610d;
-    --bs-btn-hover-bg: #74610d;
+    --bs-btn-hover-bg: #d3bd5c;
     --bs-btn-color: #74610d;
     --bs-btn-hover-border-color: #74610d;
-    --bs-btn-active-bg: #74610d;
+    --bs-btn-active-bg: #f3da6a;
     color: #74610d
 }
 
@@ -709,6 +598,7 @@ footer {
     margin: 0px auto;
     font-size: 80%;
 }
+
 .btn a {
     color: #74610d;
     text-decoration: none;
@@ -838,13 +728,153 @@ a:hover {
             "mayoristas"
             "condicionesDeVenta";
     }
+
     .forMay {
         width: 60vh;
     }
-    .mayoristas form{
+
+    .mayoristas form {
         width: 60vh;
     }
-    .inputMayorista{
+
+    .inputMayorista {
         width: 70%;
     }
+
+    .formulario {
+        width: auto;
+        margin: 2rem;
+    }
+
+    .contInfo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .contenedorNosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 0px 0px;
+        grid-template-areas:
+            "fotoNosotros fotoNosotros"
+            "textoNosotros textoNosotros"
+            "proceso1 proceso2"
+            "proceso3 proceso4";
+    }
+
+    .fraseVertical {
+        display: none;
+    }
+
+    .contenedorIndex {
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6 auto);
+        grid-template-areas:
+            "perpetua"
+            "perpetua2"
+            "clasica"
+            "clasica2"
+            "turnos"
+            "turnos2";
+    }
+    .contenedorIndex img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .iconos{
+        margin: auto;
+    }
+
+    .footerContenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3 auto);
+        grid-template-areas:
+            "mediosDePago"
+            "newslater"
+            "redes";
+    }
+
+    .redes {
+        padding-top: 25%;
+        margin: 0% auto;
+        text-align: center;
+
+    }
+
+    .redes h1 {
+        padding-top: 2%;
+        margin: 0% auto;
+        text-align: center;
+    }
+
+    .redes ul {
+padding-left: 0%;
+    }
+
+    .mediosDePago {
+        padding-top: 5%;
+        margin: 0% auto;
+        text-align: center;
+    }
+
+    .mediosDePago ul{
+        padding-left: 0%;
+    }
+
+    .mediosDePago h1 {
+        padding: 2%;
+        margin: 0% auto;
+        text-align: center;
+    }
+
+    .newslater {
+        margin-top:1%;
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+    .headerTexto {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .headerTexto {
+        font-size: 0.5rem;
+    }
+
+
+    .contenedorNosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 0px 0px;
+        grid-template-areas:
+            "fotoNosotros fotoNosotros"
+            "textoNosotros textoNosotros"
+            "proceso1 proceso2"
+            "proceso3 proceso4";
+    }
+
+    .textoNosotros p {
+        font-size: 0.8rem;
+    }
+
+    .fotoNosotros img {
+        max-width: 80%;
+        margin: 0px auto;
+        margin-bottom: 3rem;
+        height: auto;
+    }
+
+    .pimg {
+        margin: 0rem;
+        margin-top: 1rem;
+    }
+
 }
