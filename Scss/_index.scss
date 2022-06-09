@@ -1,0 +1,93 @@
+/*Comienzo de muestrario de productos*/
+
+.contenedorIndex {
+    display: grid;
+    grid-template-columns: 0.3fr repeat(3);
+    grid-template-rows: 1fr 1fr;
+    gap: 4px 4px;
+    grid-template-areas:
+        "fraseVertical perpetua clasica turnos"
+        "fraseVertical perpetua2 clasica2 turnos2";
+    align-items: center;
+
+
+    .fraseVertical {
+        justify-self: center;
+        align-self: center;
+        grid-area: fraseVertical;
+        height: 90%;
+
+        img {
+            width: 70%;
+            padding: 2rem;
+        }
+    }
+
+    @mixin productos ($grid-area) {
+        width: 90% auto;
+        height: 0px auto;
+        grid-area: $grid-area;
+        justify-content: center;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .perpetua {
+        @include productos (perpetua);
+    }
+
+    .perpetua2 {
+        @include productos (perpetua2);
+    }
+
+    .clasica {
+        @include productos (clasica);
+    }
+
+    .clasica2 {
+        @include productos (clasica2);
+    }
+
+    .turnos {
+        @include productos (turnos);
+    }
+
+    .turnos2 {
+        @include productos (turnos2);
+    }
+
+    .rotulo {
+        margin: 1rem;
+        width: 70%;
+    }
+
+
+    .diseños {
+        border: $tono-oscuro 3px solid;
+        border-style: double;
+        width: 90%;
+        justify-self: center;
+    }
+
+    .iconos {
+        display: flex;
+        width: 0px auto;
+        padding: 2%;
+        justify-content: center;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+
+        img {
+            width: 3.5rem;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+}
+
+/* Fin presentacion de productos index*/

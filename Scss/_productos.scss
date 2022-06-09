@@ -1,0 +1,60 @@
+/*Productos*/
+
+.textoProducto {
+
+    h1 {
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        list-style: none;
+        margin-bottom: 2rem;
+        margin-right: 10%;
+        padding: 2%;
+
+        li {
+            width: 20rem;
+            margin-left: 0.7rem;
+            margin-right: 10%;
+            text-align: justify;
+            line-height: 140%;
+            font-size: 90%;
+            padding: 1%;
+        }
+    }
+}
+
+.irATienda {
+    margin-top: auto;
+    padding: 1rem;
+
+    a {
+        text-decoration: none;
+        color: #74610d;
+    }
+}
+
+.conocemas {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #74610d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px auto;
+    padding: 3%;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+}
+
+/*Fin Productos*/

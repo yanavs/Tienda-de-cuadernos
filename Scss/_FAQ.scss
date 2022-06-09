@@ -1,0 +1,38 @@
+/*FAQ*/
+.dudas {
+    margin-bottom: 2rem;
+    display: block;
+    line-height: 220%;
+    margin-left: 2rem;
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 1.7rem;
+        text-align: right;
+        margin-right: 2rem;
+    }
+}
+
+.accordion-button {
+
+    &:focus {
+        box-shadow: none;
+        border-color: $tono-claro;
+    }
+
+    &:not(.collapsed) {
+        color: #74610d;
+        background-color: $tono-claro;
+
+        &::after {
+            color: black;
+
+
+        }
+    }
+}
+
+
+
+/*FIN FAQ*/

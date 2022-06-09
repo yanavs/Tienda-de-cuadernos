@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./Img/icono.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./style/estilo.css">
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Roboto&display=swap"
@@ -21,10 +21,10 @@
 <body>
     <header>
         <img src="./Img/Banner.jpg" alt="Banner de presentacion" width="100%">
-        <h1 class="headerTexto animate__animated animate__backInLeft">...mejor anotar!</h1>
+        <h1 class="animate__animated animate__backInLeft">...mejor anotar!</h1>
         <img src="./Img/logo.svg" alt="Logo" class="headerLogo animate__animated animate__pulse animate__infinite">
     </header>
-    <br><br><br>
+
     <main>
         <!--Menu -->
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -116,7 +116,7 @@
                 <img src="./Img/organizatusdias.svg" alt="Organiza tus días">
             </div>
             <div class="perpetua">
-                <img src="./Img/perpetua.svg" alt="Perpetua">
+                <img src="./Img/perpetua.svg" alt="Perpetua" class="rotulo">
                 <img src="./Img/Modelo 1.jpg" alt="Diseño1" class="diseños">
                 <div class="iconos">
                     <img src="./Img/pordentro.svg" alt="por dentro">
@@ -134,7 +134,7 @@
             </div>
             <!-- Producto 2 -->
             <div class="clasica">
-                <img src="./Img/clasica.svg" alt="Clasica">
+                <img src="./Img/clasica.svg" alt="Clasica" class="rotulo">
                 <img src="./Img/Modelo 3.jpg" alt="Diseño3" class="diseños">
                 <div class="iconos">
                     <img src="./Img/pordentro.svg" alt="por dentro">
@@ -152,7 +152,7 @@
             </div>
             <!-- Producto 3 -->
             <div class="turnos">
-                <img src="./Img/turnos.svg" alt="Turnos">
+                <img src="./Img/turnos.svg" alt="Turnos" class="rotulo">
                 <img src="./Img/Modelo 5.jpg" alt="Diseño5" class="diseños">
                 <div class="iconos">
                     <img src="./Img/pordentro.svg" alt="por dentro">
@@ -186,8 +186,7 @@
             </div>
             <div class="newslater">
                 <form>
-                    <fieldset>
-                        <legend>Querés recibir nuestras novedades?</legend>
+                        <h1>Querés recibir nuestras novedades?</h1>
                         <label for="email">Email:</label>
                         <input type="email" name="email" required class="inputNewslater">
                         <label for="name">Nombre:</label>

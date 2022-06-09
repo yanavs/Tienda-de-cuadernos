@@ -1,0 +1,365 @@
+$tono-claro: beige;
+$tono-oscuro: hsl(49, 80%, 25%);
+
+@import "index";
+@import "nosotros";
+@import "contacto";
+@import "productos";
+@import "mayoristas";
+@import "FAQ";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $tono-oscuro;
+    font-family: 'Libre Baskerville', serif;
+    text-decoration: none;
+}
+
+/*Banner header*/
+header {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+    h1 {
+        position: absolute;
+        bottom: 10%;
+        right: 20%;
+        color: white;
+        font-weight: lighter;
+        font-size: 1.2rem;
+
+        img {
+            position: absolute;
+            top: 17%;
+            left: 12%;
+            width: 7%;
+            z-index: 1;
+        }
+    }
+}
+
+/*Comienzo Menu*/
+.navbar {
+    background: $tono-claro;
+
+    .nav-link {
+        color: $tono-oscuro;
+
+        .dropdown-menu {
+            background-color: $tono-claro;
+
+            .navbar-nav li a:hover {
+                border: 1px $tono-oscuro solid;
+                border-radius: 2px;
+                opacity: 77%;
+            }
+        }
+    }
+}
+
+/*Fin Menu*/
+
+
+
+/*footer*/
+footer {
+    background-color: $tono-claro;
+    height: auto;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.footerContenedor {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+        "mediosDePago . newslater"
+        "mediosDePago . redes";
+    width: 100vh auto;
+    height: 20vh auto;
+    margin: auto;
+}
+
+
+.mediosDePago {
+    margin-left: 10%;
+    margin-top: 10%;
+    grid-area: mediosDePago;
+
+    h1 {
+        font-size: smaller;
+        font-weight: bold;
+    }
+
+    ul li {
+        line-height: 3rem;
+        list-style: none;
+        font-size: small;
+    }
+
+    img {
+        width: 1rem;
+    }
+}
+
+.newslater {
+    font-size: smaller;
+    margin-top: 2rem;
+    grid-area: newslater;
+    background-color: beige;
+    justify-items: left;
+
+    form {
+        width: 100% auto;
+        padding: 1rem;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .inputNewslater {
+            display: flex;
+            background-color: #ffffff;
+            width: 100%;
+            height: 1.2rem;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #74610d;
+
+            .enviarBottom {
+                background-color: #ffffff;
+                width: 7rem;
+                height: 2rem;
+                border-radius: 5px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #74610d;
+                margin-top: 3px;
+                padding-left: 5px;
+                margin-bottom: 5px;
+                margin-top: 3%;
+
+            }
+        }
+    }
+}
+
+.redes {
+    grid-area: redes;
+    margin-right: 6rem;
+    margin: 0px auto;
+    padding: 10%;
+
+    h1 {
+        font-size: small;
+        margin-left: 3rem;
+        font-weight: bold;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            list-style-type: none;
+            text-align: center;
+            margin: 0.7rem;
+            background-color: beige;
+            padding: 0.7rem;
+            margin-top: 0px;
+
+            a {
+                text-decoration: none;
+                font-size: small;
+                color: #74610d;
+            }
+        }
+    }
+}
+
+/*BOTON FLOTANTE*/
+.whatsAppFlotante {
+    h6 {
+        width: 3.5rem;
+        height: 3.5rem;
+        position: fixed;
+        right: 40px;
+        bottom: 40px;
+        font-size: 15px;
+        z-index: 999;
+    }
+
+    img {
+        width: 3.5rem;
+        height: 3.5rem;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 999;
+        margin-right: 0.7rem;
+    }
+}
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-width:768px) {
+
+    .forMay {
+        width: 60vh;
+    }
+
+    .mayoristas form {
+        width: 60vh;
+    }
+
+    .inputMayorista {
+        width: 70%;
+    }
+
+    .formulario {
+        width: auto;
+        margin: 2rem;
+    }
+
+    .contInfo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .contenedorNosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 0px 0px;
+        grid-template-areas:
+            "fotoNosotros fotoNosotros"
+            "textoNosotros textoNosotros"
+            "proceso1 proceso2"
+            "proceso3 proceso4";
+    }
+
+    .fraseVertical {
+        display: none;
+    }
+
+    .contenedorIndex {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6 auto);
+        grid-template-areas:
+            "perpetua"
+            "perpetua2"
+            "clasica"
+            "clasica2"
+            "turnos"
+            "turnos2";
+
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .iconos {
+        margin: auto;
+    }
+
+    .footerContenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3 auto);
+        grid-template-areas:
+            "mediosDePago"
+            "newslater"
+            "redes";
+    }
+
+    .redes {
+        padding-top: 25%;
+        margin: 0% auto;
+        text-align: center;
+
+        h1 {
+            padding-top: 2%;
+            margin: 0% auto;
+            text-align: center;
+        }
+
+        ul {
+            padding-left: 0%;
+        }
+    }
+
+    .mediosDePago {
+        padding-top: 5%;
+        margin: 0% auto;
+        text-align: center;
+
+        ul {
+            padding-left: 0%;
+        }
+
+        h1 {
+            padding: 2%;
+            margin: 0% auto;
+            text-align: center;
+        }
+    }
+
+    .newslater {
+        margin-top: 1%;
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+    .headerTexto {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .headerTexto {
+        font-size: 0.5rem;
+    }
+
+
+    .contenedorNosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 0px 0px;
+        grid-template-areas:
+            "fotoNosotros fotoNosotros"
+            "textoNosotros textoNosotros"
+            "proceso1 proceso2"
+            "proceso3 proceso4";
+    }
+
+    .textoNosotros p {
+        font-size: 0.8rem;
+    }
+
+    .fotoNosotros img {
+        max-width: 80%;
+        margin: 0px auto;
+        margin-bottom: 3rem;
+        height: auto;
+    }
+
+    .pimg {
+        margin: 0rem;
+        margin-top: 1rem;
+    }
+
+}
