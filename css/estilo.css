@@ -67,7 +67,7 @@
     margin: 1rem;
     width: 70%; }
   .contenedorIndex .diseños {
-    border: #73600d 3px solid;
+    border: #74610d 3px solid;
     border-style: double;
     width: 90%;
     justify-self: center; }
@@ -93,25 +93,29 @@
   grid-template-rows: 2fr 0.5fr;
   gap: 5px 5px;
   grid-template-areas: "fotoNosotros textoNosotros textoNosotros textoNosotros textoNosotros" "fotoNosotros proceso1 proceso2 proceso3 proceso4";
-  width: 80% auto;
+  width: 90% auto;
   height: 50vh auto;
   margin: 4rem auto; }
   .contenedorNosotros .fotoNosotros {
+    width: 97%;
     grid-area: fotoNosotros;
     justify-items: center;
     text-align: center; }
     .contenedorNosotros .fotoNosotros img {
       max-width: 100%;
+      margin: 0px auto;
       height: auto;
-      margin-left: 1rem; }
+      padding: 10%; }
   .contenedorNosotros .textoNosotros {
     grid-area: textoNosotros; }
     .contenedorNosotros .textoNosotros p {
+      margin: 0px auto;
       margin-left: 2rem;
       margin-right: 2rem;
       text-align: justify;
       line-height: 270%;
-      font-size: 0.85rem; }
+      font-size: 0.85rem;
+      padding: 1rem; }
   .contenedorNosotros .proceso1 {
     grid-area: proceso1; }
   .contenedorNosotros .proceso2 {
@@ -121,7 +125,7 @@
   .contenedorNosotros .proceso4 {
     grid-area: proceso4; }
   .contenedorNosotros .pimg {
-    width: 10rem;
+    width: 8rem;
     margin-left: 1.6rem;
     margin-right: 1.6rem;
     margin-top: 1.65rem;
@@ -363,7 +367,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #73600d;
+  color: #74610d;
   font-family: 'Libre Baskerville', serif;
   text-decoration: none; }
 
@@ -390,11 +394,11 @@ header {
 .navbar {
   background: beige; }
   .navbar .nav-link {
-    color: #73600d; }
+    color: #74610d; }
     .navbar .nav-link .dropdown-menu {
       background-color: beige; }
       .navbar .nav-link .dropdown-menu .navbar-nav li a:hover {
-        border: 1px #73600d solid;
+        border: 1px #74610d solid;
         border-radius: 2px;
         opacity: 77%; }
 
@@ -587,5 +591,5 @@ footer {
     margin-bottom: 3rem;
     height: auto; }
   .pimg {
-    margin: 0rem;
+    margin: 0px auto;
     margin-top: 1rem; } }

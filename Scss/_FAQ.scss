@@ -22,7 +22,7 @@
     }
 
     &:not(.collapsed) {
-        color: #74610d;
+        color: $tono-oscuro;
         background-color: $tono-claro;
 
         &::after {

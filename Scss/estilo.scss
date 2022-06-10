@@ -1,5 +1,5 @@
-$tono-claro: beige;
-$tono-oscuro: hsl(49, 80%, 25%);
+$tono-claro:beige;
+$tono-oscuro: #74610d;
 
 @import "index";
 @import "nosotros";
@@ -111,7 +111,7 @@ footer {
     font-size: smaller;
     margin-top: 2rem;
     grid-area: newslater;
-    background-color: beige;
+    background-color: $tono-claro;
     justify-items: left;
 
     form {
@@ -130,7 +130,7 @@ footer {
             border-radius: 5px;
             border-style: solid;
             border-width: 1px;
-            border-color: #74610d;
+            border-color: $tono-oscuro;
 
             .enviarBottom {
                 background-color: #ffffff;
@@ -139,7 +139,7 @@ footer {
                 border-radius: 5px;
                 border-style: solid;
                 border-width: 1px;
-                border-color: #74610d;
+                border-color: $tono-oscuro;
                 margin-top: 3px;
                 padding-left: 5px;
                 margin-bottom: 5px;
@@ -174,14 +174,14 @@ footer {
             list-style-type: none;
             text-align: center;
             margin: 0.7rem;
-            background-color: beige;
+            background-color: $tono-claro;
             padding: 0.7rem;
             margin-top: 0px;
 
             a {
                 text-decoration: none;
                 font-size: small;
-                color: #74610d;
+                color: $tono-oscuro;
             }
         }
     }
@@ -358,8 +358,9 @@ footer {
     }
 
     .pimg {
-        margin: 0rem;
+        margin: 0px auto;
         margin-top: 1rem;
+
     }
 
 }

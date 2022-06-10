@@ -39,7 +39,7 @@
         border-radius: 5px;
         border-style: solid;
         border-width: 1px;
-        border-color: #74610d;
+        border-color: $tono-oscuro;
         margin-top: 10px;
         padding-left: 10px;
         margin-bottom: 20px;
@@ -52,7 +52,7 @@
         border-radius: 5px;
         border-style: solid;
         border-width: 1px;
-        border-color: #74610d;
+        border-color: $tono-oscuro;
         margin-top: 10px;
         padding-left: 10px;
         margin-bottom: 20px;
@@ -67,8 +67,8 @@
         margin-bottom: 20px;
         margin-top: 10px;
         text-transform: uppercase;
-        background-color: beige;
-        border-color: #74610d;
+        background-color: $tono-claro;
+        border-color: $tono-oscuro;
         border-style: solid;
         border-radius: 10px;
         width: 100%;

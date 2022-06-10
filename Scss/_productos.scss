@@ -33,7 +33,7 @@
 
     a {
         text-decoration: none;
-        color: #74610d;
+        color: $tono-oscuro;
     }
 }
 
@@ -41,7 +41,7 @@
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    background-color: #74610d;
+    background-color: $tono-oscuro;
     display: flex;
     justify-content: center;
     align-items: center;
