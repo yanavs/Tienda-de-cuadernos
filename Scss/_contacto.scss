@@ -10,9 +10,9 @@
     padding-top: 30px;
     padding-bottom: 20px;
     background: #f4f4ed;
-    background: -moz-linear-gradient(top, #f4f4ed 0%, #f5f5dc 100%);
-    background: -webkit-linear-gradient(top, #f4f4ed 0%, #f5f5dc 100%);
-    background: linear-gradient(to bottom, #f4f4ed 0%, #f5f5dc 100%);
+    background: -moz-linear-gradient(top, #f4f4ed 0%, $tono-claro 100%);
+    background: -webkit-linear-gradient(top, #f4f4ed 0%, $tono-claro 100%);
+    background: linear-gradient(to bottom, #f4f4ed 0%, $tono-claro 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4ed', endColorstr='#f5f5dc', GradientType=0);
     display: flex;
     flex-direction: column;
@@ -60,6 +60,7 @@
     }
 
     .botonenviar {
+        
         font-style: oblique;
         height: 45px;
         padding-left: 5px;

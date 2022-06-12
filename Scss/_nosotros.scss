@@ -29,7 +29,7 @@
         grid-area: textoNosotros;
 
         p {
-            margin:0px auto;
+            margin: 0px auto;
             margin-left: 2rem;
             margin-right: 2rem;
             text-align: justify;
@@ -71,15 +71,28 @@
 
 .btn-primary {
     margin-left: 33%;
-    --bs-btn-bg: beige;
-    --bs-btn-border-color: #74610d;
-    --bs-btn-hover-bg: #d3bd5c;
-    --bs-btn-color: #74610d;
-    --bs-btn-hover-border-color: #74610d;
-    --bs-btn-active-bg: #f3da6a;
+    background: $tono-claro;
+    border-color: $tono-oscuro;
+    color: $tono-oscuro;
 
-    color: #74610d p {
-        color: #74610d;
+    &:hover {
+        background: beige;
+        color: $tono-oscuro;
+        border-color: $tono-oscuro;
+    }
+
+    &:active {
+        background: beige;
+    }
+
+    &:disabled {
+        background: $tono-claro;
+        border-color: $tono-oscuro;
+        color: $tono-oscuro;
+    }
+
+    p {
+        color: $tono-oscuro;
         text-decoration: none;
         padding: 2%;
         margin: 0px auto;

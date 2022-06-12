@@ -83,7 +83,7 @@
 
 .contenedorIndex .rotulo {
   margin: 1rem;
-  width: 70%;
+  width: 50%;
 }
 
 .contenedorIndex .diseños {
@@ -184,18 +184,33 @@
 
 .btn-primary {
   margin-left: 33%;
-  --bs-btn-bg: beige;
-  --bs-btn-border-color: #74610d;
-  --bs-btn-hover-bg: #d3bd5c;
-  --bs-btn-color: #74610d;
-  --bs-btn-hover-border-color: #74610d;
-  --bs-btn-active-bg: #f3da6a;
-  color: #74610d p;
-  color-color: #74610d;
-  color-text-decoration: none;
-  color-padding: 2%;
-  color-margin: 0px auto;
-  color-font-size: 80%;
+  background: #e3d4bf;
+  border-color: #74610d;
+  color: #74610d;
+}
+
+.btn-primary:hover {
+  background: beige;
+  color: #74610d;
+  border-color: #74610d;
+}
+
+.btn-primary:active {
+  background: beige;
+}
+
+.btn-primary:disabled {
+  background: #e3d4bf;
+  border-color: #74610d;
+  color: #74610d;
+}
+
+.btn-primary p {
+  color: #74610d;
+  text-decoration: none;
+  padding: 2%;
+  margin: 0px auto;
+  font-size: 80%;
 }
 
 .btn-primary a {
@@ -220,7 +235,7 @@
   padding-top: 30px;
   padding-bottom: 20px;
   background: #f4f4ed;
-  background: linear-gradient(to bottom, #f4f4ed 0%, #f5f5dc 100%);
+  background: linear-gradient(to bottom, #f4f4ed 0%, #e3d4bf 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4ed', endColorstr='#f5f5dc', GradientType=0);
   display: flex;
   flex-direction: column;
@@ -311,12 +326,11 @@
 }
 
 .textoProducto ul li {
-  width: 20rem;
   margin-left: 0.7rem;
   margin-right: 10%;
   text-align: justify;
   line-height: 140%;
-  font-size: 90%;
+  font-size: 85%;
   padding: 1%;
 }
 
@@ -351,44 +365,33 @@
 }
 
 /*Fin Productos*/
-.mayoristas h1 {
-  font-size: 2rem;
+.mayoristas form {
+  width: 360px;
+}
+
+.mayoristas form h1 {
   font-weight: bolder;
   text-align: left;
+  margin: 0.5rem;
+  padding: 1rem;
+  font-size: 1.7rem;
+}
+
+.mayoristas form .forMay {
+  width: 360px;
+  margin-left: 1rem;
+}
+
+.mayoristas form label {
   margin-bottom: 1rem;
 }
 
-.mayoristas h1 label {
-  margin-bottom: 1rem;
+.mayoristas form .inputMayorista {
+  width: 85%;
+  display: block;
 }
 
-.mayoristas .inputMayorista {
-  background-color: #fbfbfb;
-  width: 95%;
-  height: 1.2rem;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #74610d;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  display: flex;
-}
-
-.mayoristas .inputMayorista .botonEnviarMay {
-  background-color: #ffffff;
-  width: 7rem;
-  height: 2rem;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  margin-top: 3px;
-  padding-left: 5px;
-  margin-bottom: 5px;
-}
-
-.mayoristas .inputMayorista .botonEnviarMay:hover {
+.mayoristas form .botonEnviarMay:hover {
   background-color: beige;
 }
 
@@ -484,7 +487,7 @@ header {
 
 header h1 {
   position: absolute;
-  top: 60%;
+  top: 0%;
   right: 20%;
   color: white;
   font-weight: lighter;
@@ -569,7 +572,7 @@ footer {
 }
 
 .newslater form {
-  width: 100% auto;
+  width: 80% auto;
   padding: 1rem;
 }
 
@@ -577,18 +580,19 @@ footer {
   font-size: 1.5rem;
 }
 
-.newslater form .inputNewslater {
+.newslater form .inputNewslater, .newslater .mayoristas form .inputMayorista, .mayoristas .newslater form .inputMayorista {
   display: flex;
   background-color: #ffffff;
-  width: 100%;
+  width: 80%;
   height: 1.2rem;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
   border-color: #74610d;
+  margin: 0px auto;
 }
 
-.newslater form .inputNewslater .enviarBottom {
+.newslater form .inputNewslater .enviarBottom, .newslater .mayoristas form .inputMayorista .enviarBottom, .mayoristas .newslater form .inputMayorista .enviarBottom, .newslater .mayoristas form .inputNewslater .botonEnviarMay, .mayoristas .newslater form .inputNewslater .botonEnviarMay, .newslater .mayoristas form .inputMayorista .botonEnviarMay, .mayoristas .newslater form .inputMayorista .botonEnviarMay {
   background-color: #ffffff;
   width: 7rem;
   height: 2rem;
@@ -644,8 +648,8 @@ footer {
   width: 3.5rem;
   height: 3.5rem;
   position: fixed;
-  right: 17%;
-  bottom: 40px;
+  right: 50px;
+  bottom: 0px;
   font-size: 15px;
   z-index: 1;
 }
@@ -654,9 +658,9 @@ footer {
   width: 3.5rem;
   height: 3.5rem;
   position: fixed;
-  right: 12%;
-  bottom: 20px;
-  z-index: 999;
+  right: 25px;
+  bottom: 70px;
+  z-index: 1;
   margin-right: 0.7rem;
 }
 
@@ -747,7 +751,8 @@ footer {
 @media screen and (max-width: 600px) {
   header h1 {
     font-size: 0.9rem;
-    top: 50%;
+    top: 20%;
+    position: absolute;
   }
 }
 

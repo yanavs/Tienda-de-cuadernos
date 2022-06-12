@@ -26,7 +26,7 @@ header {
 
     h1 {
         position: absolute;
-        top: 60%;
+        top: 0%;
         right: 20%;
         color: white;
         font-weight: lighter;
@@ -117,7 +117,7 @@ footer {
     justify-items: left;
 
     form {
-        width: 100% auto;
+        width: 80% auto;
         padding: 1rem;
 
         h1 {
@@ -127,12 +127,13 @@ footer {
         .inputNewslater {
             display: flex;
             background-color: #ffffff;
-            width: 100%;
+            width: 80%;
             height: 1.2rem;
             border-radius: 5px;
             border-style: solid;
             border-width: 1px;
             border-color: $tono-oscuro;
+            margin: 0px auto;
 
             .enviarBottom {
                 background-color: #ffffff;
@@ -195,8 +196,8 @@ footer {
         width: 3.5rem;
         height: 3.5rem;
         position: fixed;
-        right: 17%;
-        bottom: 40px;
+        right:50px;
+        bottom: 0px;
         font-size: 15px;
         z-index: 1;
     }
@@ -204,10 +205,10 @@ footer {
     img {
         width: 3.5rem;
         height: 3.5rem;
-        position: fixed;
-        right: 12%;
-        bottom: 20px;
-        z-index: 999;
+        position:fixed;
+        right: 25px;
+        bottom: 70px;
+        z-index: 1;
         margin-right: 0.7rem;
     }
 }
@@ -337,7 +338,8 @@ footer {
     header {
         h1 {
             font-size: 0.9rem;
-            top: 50%;
+            top: 20%;
+            position:absolute;
         }
     }
 }
