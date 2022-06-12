@@ -14,3 +14,5 @@ Ya existia un mixin en la entrega anterior, se agrego dos extend para los input 
 • Otras modificaciones generales:
 -Colores
 -Correcciones generales para que el proyecto sea más responsive.
+
+••• Queda pendiente la compresión de imagenes para que estas sean menos pesadas y hagan la carga de la pagina más rápida.
