@@ -1,4 +1,4 @@
-$tono-claro:beige;
+$tono-claro: rgb(227, 212, 191);
 $tono-oscuro: #74610d;
 
 @import "index";
@@ -8,7 +8,7 @@ $tono-oscuro: #74610d;
 @import "mayoristas";
 @import "FAQ";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,22 +22,24 @@ header {
     position: relative;
     display: inline-block;
     text-align: center;
+    height: 100%;
 
     h1 {
         position: absolute;
-        bottom: 10%;
+        top: 60%;
         right: 20%;
         color: white;
         font-weight: lighter;
         font-size: 1.2rem;
+        z-index: 1;
+    }
 
-        img {
-            position: absolute;
-            top: 17%;
-            left: 12%;
-            width: 7%;
-            z-index: 1;
-        }
+    .headerLogo {
+        position: absolute;
+        top: 14%;
+        left: 12%;
+        width: 7%;
+        z-index: 1;
     }
 }
 
@@ -193,17 +195,17 @@ footer {
         width: 3.5rem;
         height: 3.5rem;
         position: fixed;
-        right: 40px;
+        right: 17%;
         bottom: 40px;
         font-size: 15px;
-        z-index: 999;
+        z-index: 1;
     }
 
     img {
         width: 3.5rem;
         height: 3.5rem;
         position: fixed;
-        right: 20px;
+        right: 12%;
         bottom: 20px;
         z-index: 999;
         margin-right: 0.7rem;
@@ -263,6 +265,14 @@ footer {
             "clasica2"
             "turnos"
             "turnos2";
+
+        .diseños {
+            width: 80%;
+        }
+
+        .rotulo {
+            width: 60%;
+        }
 
         img {
             margin-left: auto;
@@ -324,14 +334,19 @@ footer {
 
 
 @media screen and (max-width:600px) {
-    .headerTexto {
-        font-size: 0.9rem;
+    header {
+        h1 {
+            font-size: 0.9rem;
+            top: 50%;
+        }
     }
 }
 
 @media screen and (max-width:480px) {
-    .headerTexto {
-        font-size: 0.5rem;
+    header {
+        h1 {
+            font-size: 0.5rem;
+        }
     }
 
 
