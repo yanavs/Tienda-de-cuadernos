@@ -704,7 +704,7 @@
   background: white;
   height: 100%;
   width: 100%;
-  margin: 0px auto;
+  margin: 0% auto;
 }
 
 .error p {
@@ -712,13 +712,12 @@
   width: 80% auto;
   font-size: 1.5rem;
   padding: 2rem;
-  margin: 2rem;
 }
 
 .error img {
-  width: 95%;
-  padding: 2rem;
-  margin: 2rem;
+  width: 75%;
+  padding: 1rem;
+  margin: 0% auto;
 }
 
 .error .btn {
