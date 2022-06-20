@@ -220,6 +220,22 @@ footer {
 
 /* MEDIA QUERIES*/
 
+@media screen and (max-width:990px) {
+        header{
+        h1 {
+            position:absolute;
+            top: 20%;
+            }
+    
+        .headerLogo {
+            position:absolute;
+            top: 10%;
+            
+            
+    }
+}
+
+
 @media screen and (max-width:768px) {
 
     .forMay {
@@ -339,6 +355,8 @@ footer {
 }
 
 
+
+
 @media screen and (max-width:600px) {
     header {
         h1 {
@@ -384,3 +402,4 @@ footer {
         }
     }
 }
+        }

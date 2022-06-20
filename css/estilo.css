@@ -701,22 +701,22 @@
 }
 
 .error {
-  background: #e3d4bf;
-  height: 100vw;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  background: white;
+  height: 100%;
+  width: 100%;
+  margin: 0px auto;
 }
 
 .error p {
-  width: 30rem;
   text-align: center;
-  margin: 150px auto;
-  font-size: 2rem;
+  width: 80% auto;
+  font-size: 1.5rem;
+  padding: 2rem;
+  margin: 2rem;
 }
 
 .error img {
-  width: 30rem;
+  width: 95%;
   padding: 2rem;
   margin: 2rem;
 }
@@ -924,7 +924,18 @@ footer {
 }
 
 /* MEDIA QUERIES*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
+  header h1 {
+    position: absolute;
+    top: 20%;
+  }
+  header .headerLogo {
+    position: absolute;
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 990px) and (max-width: 768px) {
   .forMay {
     width: 60vh;
   }
@@ -1007,7 +1018,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 990px) and (max-width: 600px) {
   header h1 {
     font-size: 0.9rem;
     top: 20%;
@@ -1015,7 +1026,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 990px) and (max-width: 480px) {
   header h1 {
     font-size: 0.5rem;
   }

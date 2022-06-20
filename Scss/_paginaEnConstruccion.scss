@@ -1,19 +1,20 @@
     .error{
+    background: white;
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
 
-    background: $tono-claro;
-    height: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     p{
-        width: 30rem;
-        text-align: center;
-        margin: 150px auto;
-        font-size: 2rem;
+    
+       text-align: center;
+        width: 80% auto;
+        font-size: 1.5rem;
+        padding: 2rem;
+        margin: 2rem;;
         
     }
     img{
-        width: 30rem;
+        width:95%;
         padding: 2rem;
         margin: 2rem;
     }
