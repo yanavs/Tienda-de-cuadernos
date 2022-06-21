@@ -7,6 +7,8 @@ $tono-oscuro: #74610d;
 @import "productos";
 @import "mayoristas";
 @import "FAQ";
+@import "preloader";
+@import "agendaclasica";
 
 * {
     margin: 0;
@@ -41,7 +43,9 @@ header {
         width: 7%;
         z-index: 1;
     }
+
 }
+
 
 /*Comienzo Menu*/
 .navbar {
@@ -196,7 +200,7 @@ footer {
         width: 3.5rem;
         height: 3.5rem;
         position: fixed;
-        right:50px;
+        right: 50px;
         bottom: 0px;
         font-size: 15px;
         z-index: 1;
@@ -205,7 +209,7 @@ footer {
     img {
         width: 3.5rem;
         height: 3.5rem;
-        position:fixed;
+        position: fixed;
         right: 25px;
         bottom: 70px;
         z-index: 1;
@@ -339,7 +343,7 @@ footer {
         h1 {
             font-size: 0.9rem;
             top: 20%;
-            position:absolute;
+            position: absolute;
         }
     }
 }
@@ -349,35 +353,33 @@ footer {
         h1 {
             font-size: 0.5rem;
         }
+
+        .contenedorNosotros {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, auto);
+            gap: 0px 0px;
+            grid-template-areas:
+                "fotoNosotros fotoNosotros"
+                "textoNosotros textoNosotros"
+                "proceso1 proceso2"
+                "proceso3 proceso4";
+        }
+
+        .textoNosotros p {
+            font-size: 0.8rem;
+        }
+
+        .fotoNosotros img {
+            max-width: 80%;
+            margin: 0px auto;
+            margin-bottom: 3rem;
+            height: auto;
+        }
+
+        .pimg {
+            margin: 0px auto;
+            margin-top: 1rem;
+
+        }
     }
-
-
-    .contenedorNosotros {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
-        gap: 0px 0px;
-        grid-template-areas:
-            "fotoNosotros fotoNosotros"
-            "textoNosotros textoNosotros"
-            "proceso1 proceso2"
-            "proceso3 proceso4";
-    }
-
-    .textoNosotros p {
-        font-size: 0.8rem;
-    }
-
-    .fotoNosotros img {
-        max-width: 80%;
-        margin: 0px auto;
-        margin-bottom: 3rem;
-        height: auto;
-    }
-
-    .pimg {
-        margin: 0px auto;
-        margin-top: 1rem;
-
-    }
-
 }

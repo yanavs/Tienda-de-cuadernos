@@ -468,6 +468,233 @@
 }
 
 /*FIN FAQ*/
+.loader {
+  width: 20%;
+  position: fixed;
+  margin: 0px auto;
+  left: 40%;
+  top: 30%;
+  z-index: 1;
+}
+
+.loader img {
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  inset: -15px;
+  border: 6px solid #74610d;
+  border-top-color: #e3d4bf;
+  border-bottom-color: #e3d4bf;
+  border-left-color: #74610d;
+  border-radius: 50%;
+  z-index: -1;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*Productos AGENDA CLASICA*/
+.preview {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 996px) {
+  .preview {
+    margin-bottom: 20px;
+  }
+}
+
+.preview-pic {
+  flex-grow: 0.2;
+}
+
+.preview-thumbnail.nav-tabs {
+  border: none;
+  margin-top: 15px;
+}
+
+.preview-thumbnail.nav-tabs li {
+  width: 18%;
+  margin-right: 2.5%;
+}
+
+.preview-thumbnail.nav-tabs li img {
+  max-width: 100%;
+  display: block;
+  transition: all .2s ease-in-out;
+}
+
+.preview-thumbnail.nav-tabs li img:hover {
+  transform: scale(2.5);
+}
+
+.preview-thumbnail.nav-tabs li a {
+  padding: 0;
+  margin: 0;
+}
+
+.preview-thumbnail.nav-tabs li:last-of-type {
+  margin-right: 0;
+}
+
+.tab-content {
+  overflow: hidden;
+  height: auto;
+}
+
+.tab-content img {
+  width: 100%;
+  animation-name: opacity;
+  animation-duration: .3s;
+}
+
+.card {
+  margin-top: 50px;
+  background: #f7f3ef;
+  padding: 3em;
+  line-height: 1.5em;
+}
+
+@media screen and (min-width: 997px) {
+  .wrapper {
+    display: flex;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.colors {
+  flex-grow: 1;
+}
+
+.product-title,
+.colors {
+  text-transform: UPPERCASE;
+  font-weight: 200;
+  font-family: roboto;
+}
+
+.checked,
+.price span {
+  color: #74610d;
+}
+
+.product-title,
+.rating,
+.product-description,
+.price,
+.vote,
+.sizes {
+  margin-bottom: 15px;
+}
+
+.product-title {
+  margin-top: 0;
+}
+
+.size {
+  margin-right: 10px;
+}
+
+.size:first-of-type {
+  margin-left: 40px;
+}
+
+.color {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 2em;
+  width: 2em;
+  border-radius: 2px;
+}
+
+.color:first-of-type {
+  margin-left: 20px;
+}
+
+.add-to-cart,
+.like {
+  background: #e3d4bf;
+  padding: 1.2em;
+  margin: 1em;
+  border: #74610d;
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  color: #74610d;
+  transition: background .3s ease;
+}
+
+.add-to-cart:hover,
+.like:hover {
+  background: #b36800;
+  color: #fff;
+}
+
+.not-available {
+  text-align: center;
+  line-height: 2em;
+}
+
+.not-available:before {
+  font-family: fontawesome;
+  content: "\f00d";
+  color: #fff;
+}
+
+.opdiseños {
+  width: 15%;
+  padding: 0.1rem;
+  margin: 0.1rem;
+  transition: all .1s ease-in-out;
+}
+
+.opdiseños:hover {
+  transform: scale(2);
+}
+
+.tooltip-inner {
+  padding: 1.3em;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.interioragc {
+  width: 100%;
+  padding: 2%;
+}
+
+.formProd {
+  padding-top: 2rem;
+  font-family: roboto;
+}
+
+.textName {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -760,22 +987,22 @@ footer {
   header h1 {
     font-size: 0.5rem;
   }
-  .contenedorNosotros {
+  header .contenedorNosotros {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
     gap: 0px 0px;
     grid-template-areas: "fotoNosotros fotoNosotros" "textoNosotros textoNosotros" "proceso1 proceso2" "proceso3 proceso4";
   }
-  .textoNosotros p {
+  header .textoNosotros p {
     font-size: 0.8rem;
   }
-  .fotoNosotros img {
+  header .fotoNosotros img {
     max-width: 80%;
     margin: 0px auto;
     margin-bottom: 3rem;
     height: auto;
   }
-  .pimg {
+  header .pimg {
     margin: 0px auto;
     margin-top: 1rem;
   }
