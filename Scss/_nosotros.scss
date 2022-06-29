@@ -1,7 +1,7 @@
 /*Nosotros*/
 .contenedorNosotros {
     display: grid;
-    grid-template-columns: 1.6fr repeat(4, 1fr);
+    grid-template-columns: 2fr repeat(4, 1fr);
     grid-template-rows: 2fr 0.5fr;
     gap: 5px 5px;
     grid-template-areas:
@@ -16,12 +16,14 @@
         grid-area: fotoNosotros;
         justify-items: center;
         text-align: center;
+        padding: 1rem;
+        margin: 0px auto;
 
         img {
             max-width: 100%;
             margin: 0px auto;
             height: auto;
-            padding: 10%;
+        
         }
     }
 
@@ -33,7 +35,7 @@
             margin-left: 2rem;
             margin-right: 2rem;
             text-align: justify;
-            line-height: 270%;
+            line-height: 290%;
             font-size: 0.85rem;
             padding: 1rem;
         }
@@ -59,7 +61,6 @@
         width: 8rem;
         margin-left: 2.5rem;
         margin-right: 2.5rem;
-        margin-top: 1.65rem;
         border-radius: 0.2rem;
         transition: all .2s ease-in-out;
 
@@ -84,7 +85,8 @@
     }
 
     &:active {
-        background: beige;
+        background: $tono-claro;
+        color: $tono-oscuro;
     }
 
     &:disabled {

@@ -116,7 +116,7 @@
 /*Nosotros*/
 .contenedorNosotros {
   display: grid;
-  grid-template-columns: 1.6fr repeat(4, 1fr);
+  grid-template-columns: 2fr repeat(4, 1fr);
   grid-template-rows: 2fr 0.5fr;
   gap: 5px 5px;
   grid-template-areas: "fotoNosotros textoNosotros textoNosotros textoNosotros textoNosotros" "fotoNosotros proceso1 proceso2 proceso3 proceso4";
@@ -130,13 +130,14 @@
   grid-area: fotoNosotros;
   justify-items: center;
   text-align: center;
+  padding: 1rem;
+  margin: 0px auto;
 }
 
 .contenedorNosotros .fotoNosotros img {
   max-width: 100%;
   margin: 0px auto;
   height: auto;
-  padding: 10%;
 }
 
 .contenedorNosotros .textoNosotros {
@@ -148,7 +149,7 @@
   margin-left: 2rem;
   margin-right: 2rem;
   text-align: justify;
-  line-height: 270%;
+  line-height: 290%;
   font-size: 0.85rem;
   padding: 1rem;
 }
@@ -173,7 +174,6 @@
   width: 8rem;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
-  margin-top: 1.65rem;
   border-radius: 0.2rem;
   transition: all .2s ease-in-out;
 }
@@ -198,7 +198,8 @@
 }
 
 .btn-primary:active {
-  background: beige;
+  background: #e3d4bf;
+  color: #74610d;
 }
 
 .btn-primary:disabled {
@@ -1000,7 +1001,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 400px) {
   header h1 {
     top: 40%;
     font-size: 0.5rem;
@@ -1010,19 +1011,22 @@ footer {
     grid-template-rows: repeat(4, auto);
     gap: 0px 0px;
     grid-template-areas: "fotoNosotros fotoNosotros" "textoNosotros textoNosotros" "proceso1 proceso2" "proceso3 proceso4";
+    margin: 0px auto;
   }
-  .textoNosotros p {
+  .contenedorNosotros .textoNosotros p {
     font-size: 0.8rem;
   }
-  .fotoNosotros img {
-    max-width: 80%;
+  .contenedorNosotros .fotoNosotros img {
+    max-width: 90%;
     margin: 0px auto;
     margin-bottom: 3rem;
     height: auto;
   }
-  .pimg {
-    margin: 0px auto;
+  .contenedorNosotros .pimg {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
