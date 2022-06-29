@@ -23,7 +23,6 @@ $tono-oscuro: #74610d;
 /*Banner header*/
 header {
     position: relative;
-    display: inline-block;
     text-align: center;
     height: 100%;
 
@@ -44,7 +43,8 @@ header {
         width: 7%;
         z-index: 1;
     }
-    .bannerMovil{
+
+    .bannerMovil {
         display: none;
     }
 }
@@ -71,7 +71,8 @@ header {
             }
         }
     }
-    .navbar-toggler{
+
+    .navbar-toggler {
         border: none;
     }
 }
@@ -223,10 +224,11 @@ footer {
 
 @media screen and (max-width:990px) {
     header {
-        .banner{
+        .banner {
             display: none;
         }
-        .bannerMovil{
+
+        .bannerMovil {
             display: block;
         }
     }
@@ -274,6 +276,11 @@ footer {
         .inputMayorista {
             margin: 0px auto;
         }
+    }
+
+    /* MQ CONTACTOS*/
+    .formulario {
+        width: 85%;
     }
 
     /* MQ NOSOTROS*/
