@@ -1,7 +1,6 @@
-.mayoristas {
+
 
     form {
-        width: 360px;
 
         h1 {
             font-weight: bolder;
@@ -10,30 +9,23 @@
             padding: 1rem;
             font-size: 1.7rem;
         }
-.forMay{
-    width: 360px;
-    margin-left: 1rem;
-
-}
-        label {
-            margin-bottom: 1rem;
-        }
 
         .inputMayorista {
             @extend .inputNewslater;
             width: 85%;
             display: block;
+            margin-bottom: 2rem;
         }
 
         .botonEnviarMay {
             @extend .enviarBottom;
-
-            &:hover {
-                background-color: beige;
-            }
+            
+            margin-top: 10px;
+            width: 85%;
         }
     }
-}
+
+
 
 
 .condicionesDeVenta {

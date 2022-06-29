@@ -22,9 +22,15 @@
 
 <body>
     <header>
-        <img src="../Img/Banner.jpg" alt="Banner de presentacion" width="100%">
-        <h1 class="headerTexto animate__animated animate__backInLeft">...mejor anotar!</h1>
-        <img src="../Img/logo.svg" alt="Logo" class="headerLogo animate__animated animate__pulse animate__infinite">
+         <!--BANNER-->
+         <div class="banner">
+            <img src="../Img/Banner.jpg" alt="Banner de presentacion" width="100%">
+            <h1 class="animate__animated animate__backInLeft">...mejor anotar!</h1>
+            <img src="../Img/logo.svg" alt="Logo" class="headerLogo animate__animated animate__pulse animate__infinite">
+        </div>
+            <div class="bannerMovil">
+            <img src="../Img/bannermovil.jpg" alt="Banner de presentacion" width="100%" >
+        </div>
 <!--Menu -->
 <nav class="navbar navbar-expand-lg navbar-light mt-2 mb-2">
     <div class="container-fluid">
@@ -140,42 +146,33 @@
 
     <footer>
         <div class="footerContenedor">
-            <div class="mediosDePago">
-                <h1>Medios de Pago</h1>
-                <ul>
-                    <li><img src="../Img/tarjeta.svg" alt="Tarjeta de Credito"> Tarjeta de Crédito</li>
-                    <li><img src="../Img/tarjeta.svg" alt="Tarjeta de Debito">Tarjeta de Débito</li>
-                    <li><img src="../Img/transfe.svg" alt="Transferencia">Transferencia</li>
-                    <li><img src="../Img/efectivo.svg" alt="Efectivo">Efectivo</li>
-                </ul>
-            </div>
             <div class="newslater">
                 <form>
-                    <fieldset>
-                        <legend>Querés recibir nuestras novedades?</legend>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" required class="inputNewslater">
-                        <label for="name">Nombre:</label>
-                        <input type="text" name="Nombre" class="inputNewslater">
-                        <input type="submit" value="enviar" class="enviarBottom">
-                    </fieldset>
+                    <h1>Querés recibir nuestras novedades?</h1>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required class="inputNewslater">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="Nombre" class="inputNewslater">
+                    <input type="submit" value="enviar" class="enviarBottom">
                 </form>
             </div>
-            <div class="redes">
-                <h1>Redes</h1>
+            <div class="contactanos">
+                <h2>Contactanos:</h2>
+                <h4>upalaladi@gmail.com</h4>
+                <hr>
+                <h2>Redes</h2>
                 <ul>
                     <li>
                         <a title="Instagram" href="http://www.instagram.com/upa.la.la"><img src="../Img/instagram.svg"
-                                alt="Instagram"> Instagram</a>
+                                alt="Instagram" target="_blank"> Instagram</a>
                     </li>
                     <li>
                         <a title="Facebook" href="http://www.facebook.com/upalaladi"><img src="../Img/facebook.svg"
-                                alt="Facebook"> Facebook</a>
+                                alt="Facebook" target="_blank"> Facebook</a>
                     </li>
                     <li>
-                        <a title="WhatsApp" href="https://wa.me/2234222486"><img src="../Img/whatsapp.svg"
-                                alt="Whatsapp">
-                            WhatsApp</a>
+                        <a title="WhatsApp" href="https://wa.me/2234222486" class="wappDesktop"><img src="../Img/whatsapp.svg"
+                                alt="Facebook" target="_blank">WhatsApp</a>
                     </li>
                 </ul>
             </div>
@@ -186,6 +183,7 @@
             </div>
         </div>
     </footer>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

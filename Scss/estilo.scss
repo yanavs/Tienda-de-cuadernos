@@ -44,7 +44,9 @@ header {
         width: 7%;
         z-index: 1;
     }
-
+    .bannerMovil{
+        display: none;
+    }
 }
 
 
@@ -52,11 +54,15 @@ header {
 .navbar {
     background: $tono-claro;
 
+
     .nav-link {
         color: $tono-oscuro;
 
+
         .dropdown-menu {
             background-color: $tono-claro;
+
+
 
             .navbar-nav li a:hover {
                 border: 1px $tono-oscuro solid;
@@ -65,7 +71,12 @@ header {
             }
         }
     }
+    .navbar-toggler{
+        border: none;
+    }
 }
+
+
 
 /*Fin Menu*/
 
@@ -76,7 +87,6 @@ footer {
     background-color: $tono-claro;
     height: auto;
     width: 100%;
-    margin-top: 1rem;
 }
 
 .footerContenedor {
@@ -85,103 +95,92 @@ footer {
     grid-template-rows: 1fr;
     gap: 5px 5px;
     grid-template-areas:
-        "mediosDePago . newslater"
-        "mediosDePago . redes";
+        "newslater . contactanos";
     width: 100vh auto;
-    height: 20vh auto;
     margin: auto;
+
 }
 
-
-.mediosDePago {
-    margin-left: 10%;
-    margin-top: 10%;
-    grid-area: mediosDePago;
-
-    h1 {
-        font-size: smaller;
-        font-weight: bold;
-    }
-
-    ul li {
-        line-height: 3rem;
-        list-style: none;
-        font-size: small;
-    }
-
-    img {
-        width: 1rem;
-    }
-}
 
 .newslater {
     font-size: smaller;
-    margin-top: 2rem;
     grid-area: newslater;
     background-color: $tono-claro;
     justify-items: left;
+    margin-left: 2rem;
 
     form {
         width: 80% auto;
-        padding: 1rem;
+
 
         h1 {
-            font-size: 1.5rem;
+            font-size: 1rem;
+            padding-top: 1rem;
+            margin: 0px;
         }
 
         .inputNewslater {
             display: flex;
             background-color: #ffffff;
-            width: 80%;
+            width: 90%;
             height: 1.2rem;
             border-radius: 5px;
             border-style: solid;
             border-width: 1px;
             border-color: $tono-oscuro;
-            margin: 0px auto;
+            margin: 0.2rem;
+        }
 
-            .enviarBottom {
-                background-color: #ffffff;
-                width: 7rem;
-                height: 2rem;
-                border-radius: 5px;
-                border-style: solid;
-                border-width: 1px;
-                border-color: $tono-oscuro;
-                margin-top: 3px;
-                padding-left: 5px;
-                margin-bottom: 5px;
-                margin-top: 3%;
 
-            }
+        .enviarBottom {
+            background-color: #ffffff;
+            width: 5rem;
+            height: 2rem;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: $tono-oscuro;
+            margin-top: 7px;
+            padding: 2px;
+            margin-bottom: 5px;
         }
     }
 }
 
-.redes {
-    grid-area: redes;
+
+.contactanos {
+    grid-area: contactanos;
     margin-right: 6rem;
     margin: 0px auto;
-    padding: 10%;
+    padding-top: 1rem;
 
-    h1 {
-        font-size: small;
-        margin-left: 3rem;
+    .wappDesktop {
+        display: none;
+    }
+
+
+    h2 {
+        font-size: 1rem;
         font-weight: bold;
     }
 
+    h4 {
+        font-size: 0.8rem;
+    }
+
     img {
-        width: 50%;
+        width: 2.2rem;
     }
 
     ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
+        margin: 0px;
+        padding: 0px;
 
         li {
             list-style-type: none;
             text-align: center;
-            margin: 0.7rem;
             background-color: $tono-claro;
             padding: 0.7rem;
             margin-top: 0px;
@@ -197,64 +196,87 @@ footer {
 
 /*BOTON FLOTANTE*/
 .whatsAppFlotante {
+
     h6 {
         width: 3.5rem;
         height: 3.5rem;
         position: fixed;
-        right: 50px;
-        bottom: 0px;
+        right: 107px;
+        bottom: 20px;
         font-size: 15px;
         z-index: 1;
     }
 
     img {
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 2.2rem;
+        height: 2.2rem;
         position: fixed;
-        right: 25px;
-        bottom: 70px;
+        right: 105px;
+        bottom: 25px;
         z-index: 1;
-        margin-right: 0.7rem;
+
     }
 }
 
 /* MEDIA QUERIES*/
 
+
 @media screen and (max-width:990px) {
-        header{
-        h1 {
-            position:absolute;
-            top: 20%;
-            }
-    
-        .headerLogo {
-            position:absolute;
-            top: 10%;
-            
-            
+    header {
+        .banner{
+            display: none;
+        }
+        .bannerMovil{
+            display: block;
+        }
+    }
+
+    .preview {
+        margin-bottom: 20px;
+    }
+
+    .whatsAppFlotante {
+        display: none;
+    }
+
+    .contactanos {
+        .wappDesktop {
+            display: block;
+            visibility: visible;
+        }
     }
 }
 
 
+
+
+
+@media screen and (min-width: 990px) {
+    .wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+}
+
 @media screen and (max-width:768px) {
 
-    .forMay {
-        width: 60vh;
+    /* MQ MAYORISTAS*/
+    .formularioMay {
+        text-align: center;
+
+        h1 {
+            text-align: center;
+        }
+
+        .inputMayorista {
+            margin: 0px auto;
+        }
     }
 
-    .mayoristas form {
-        width: 60vh;
-    }
-
-    .inputMayorista {
-        width: 70%;
-    }
-
-    .formulario {
-        width: auto;
-        margin: 2rem;
-    }
-
+    /* MQ NOSOTROS*/
     .contInfo {
         display: flex;
         flex-direction: column;
@@ -272,12 +294,12 @@ footer {
             "proceso3 proceso4";
     }
 
+    /* MQ INDEX*/
     .fraseVertical {
         display: none;
     }
 
     .contenedorIndex {
-
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6 auto);
         grid-template-areas:
@@ -306,100 +328,95 @@ footer {
         margin: auto;
     }
 
+    /* MQ FOOTER*/
+
     .footerContenedor {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3 auto);
+        grid-template-rows: repeat(2 auto);
         grid-template-areas:
-            "mediosDePago"
             "newslater"
-            "redes";
-    }
+            "contactanos";
+        margin: 0px auto;
 
-    .redes {
-        padding-top: 25%;
-        margin: 0% auto;
-        text-align: center;
 
-        h1 {
-            padding-top: 2%;
+        .contactanos {
             margin: 0% auto;
             text-align: center;
+
+            h1 {
+                padding-top: 2%;
+                margin: 0% auto;
+                text-align: center;
+            }
+
         }
 
-        ul {
-            padding-left: 0%;
-        }
-    }
-
-    .mediosDePago {
-        padding-top: 5%;
-        margin: 0% auto;
-        text-align: center;
-
-        ul {
-            padding-left: 0%;
-        }
-
-        h1 {
-            padding: 2%;
+        .newslater {
             margin: 0% auto;
             text-align: center;
+
+
+            form {
+                margin: 0px auto;
+
+
+                h1 {
+                    text-align: center;
+                }
+
+                .inputNewslater {
+                    margin: 0px auto;
+                }
+            }
         }
     }
-
-    .newslater {
-        margin-top: 1%;
-        text-align: center;
-    }
-
 }
 
 
-
-
-@media screen and (max-width:600px) {
+@media screen and (max-width:660px) {
     header {
         h1 {
-            font-size: 0.9rem;
-            top: 20%;
+            font-size: 0.7rem;
+            top: 50%;
             position: absolute;
         }
     }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:440px) {
     header {
         h1 {
+            top: 40%;
             font-size: 0.5rem;
         }
-
-        .contenedorNosotros {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, auto);
-            gap: 0px 0px;
-            grid-template-areas:
-                "fotoNosotros fotoNosotros"
-                "textoNosotros textoNosotros"
-                "proceso1 proceso2"
-                "proceso3 proceso4";
-        }
-
-        .textoNosotros p {
-            font-size: 0.8rem;
-        }
-
-        .fotoNosotros img {
-            max-width: 80%;
-            margin: 0px auto;
-            margin-bottom: 3rem;
-            height: auto;
-        }
-
-        .pimg {
-            margin: 0px auto;
-            margin-top: 1rem;
-
-        }
     }
+
+    .contenedorNosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 0px 0px;
+        grid-template-areas:
+            "fotoNosotros fotoNosotros"
+            "textoNosotros textoNosotros"
+            "proceso1 proceso2"
+            "proceso3 proceso4";
+    }
+
+    .textoNosotros p {
+        font-size: 0.8rem;
+    }
+
+    .fotoNosotros img {
+        max-width: 80%;
+        margin: 0px auto;
+        margin-bottom: 3rem;
+        height: auto;
+    }
+
+    .pimg {
+        margin: 0px auto;
+        margin-top: 1rem;
+
+    }
+
 }
-        }

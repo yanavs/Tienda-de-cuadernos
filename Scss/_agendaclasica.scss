@@ -12,11 +12,7 @@
     flex-direction: column;
 }
 
-@media screen and (max-width: 996px) {
-    .preview {
-        margin-bottom: 20px;
-    }
-}
+
 
 .preview-pic {
     -webkit-box-flex: 1;
@@ -75,19 +71,13 @@
 
 .cards {
     margin-top: 50px;
+    margin-bottom: 50px;
     background: rgb(247, 243, 239);
 padding: 3em;
     line-height: 1.5em;
 }
 
-@media screen and (min-width: 997px) {
-    .wrapper {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-    }
-}
+
 
 .details {
     display: -webkit-box;
