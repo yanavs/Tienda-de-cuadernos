@@ -407,27 +407,27 @@ footer {
             "textoNosotros textoNosotros"
             "proceso1 proceso2"
             "proceso3 proceso4";
-            margin: 0px auto;
-    
-
-    .textoNosotros p {
-        font-size: 0.8rem;
-    }
-
-    .fotoNosotros img {
-        max-width: 90%;
         margin: 0px auto;
-        margin-bottom: 3rem;
-        height: auto;
-    }
 
-    .pimg {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        
-    }
 
-}
+        .textoNosotros p {
+            font-size: 0.8rem;
+        }
+
+        .fotoNosotros img {
+            max-width: 90%;
+            margin: 0px auto;
+            margin-bottom: 3rem;
+            height: auto;
+        }
+
+        .pimg {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+        }
+
+    }
 }

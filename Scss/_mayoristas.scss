@@ -1,29 +1,27 @@
+form {
 
-
-    form {
-
-        h1 {
-            font-weight: bolder;
-            text-align: left;
-            margin: 0.5rem;
-            padding: 1rem;
-            font-size: 1.7rem;
-        }
-
-        .inputMayorista {
-            @extend .inputNewslater;
-            width: 85%;
-            display: block;
-            margin-bottom: 2rem;
-        }
-
-        .botonEnviarMay {
-            @extend .enviarBottom;
-            
-            margin-top: 10px;
-            width: 85%;
-        }
+    h1 {
+        font-weight: bolder;
+        text-align: left;
+        margin: 0.5rem;
+        padding: 1rem;
+        font-size: 1.7rem;
     }
+
+    .inputMayorista {
+        @extend .inputNewslater;
+        width: 85%;
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    .botonEnviarMay {
+        @extend .enviarBottom;
+
+        margin-top: 10px;
+        width: 85%;
+    }
+}
 
 
 
